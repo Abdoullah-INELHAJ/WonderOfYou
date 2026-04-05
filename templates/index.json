@@ -352,6 +352,40 @@
         "padding_bottom": 36
       }
     },
+    "newsletter_K793Mm": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_qityx3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ne manquez aucune étape de votre transformation.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_cGheL3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Accès prioritaire aux nouvelles cures, offres secrètes et guides de santé naturelle. Soyez la première informée de nos ventes privées pour prendre soin de vous, sans attendre.</p>"
+          }
+        },
+        "email_form_HGKYeV": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_qityx3",
+        "paragraph_cGheL3",
+        "email_form_HGKYeV"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "capital_club_presentation_marque_R633wi": {
       "type": "CapitalClubPresentationMarque",
       "blocks": {
@@ -483,6 +517,7 @@
     "featured_collection",
     "capital_club_rich_text1_d9NDeh",
     "image_with_text_Aqpjwa",
+    "newsletter_K793Mm",
     "capital_club_presentation_marque_R633wi"
   ]
 }
