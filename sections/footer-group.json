@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-{"name":"t:sections.footer.name","type":"footer","sections":{"capital_club_trust_badges_9cxzWL":{"type":"CapitalClubTrustBadges","blocks":{"item_VrGhQY":{"type":"item","settings":{"icon":"payment","title":"Paiment sécurisé","text":"text","url":"","icon_color":"#ffffff","icon_bg_color":"#121212","icon_shadow_color":"#e8e8e8"}},"item_UAXamr":{"type":"item","settings":{"icon":"box","title":"Livraison offerte","text":"text","url":"","icon_color":"#ffffff","icon_bg_color":"#121212","icon_shadow_color":"#e8e8e8"}},"item_heFPVx":{"type":"item","settings":{"icon":"return","title":"Satisfait ou remboursé","text":"text","url":"","icon_color":"#ffffff","icon_bg_color":"#121212","icon_shadow_color":"#e8e8e8"}},"item_ELq4pi":{"type":"item","settings":{"icon":"chat","title":"Service client","text":"text","url":"","icon_color":"#ffffff","icon_bg_color":"#121212","icon_shadow_color":"#e8e8e8"}}},"block_order":["item_VrGhQY","item_UAXamr","item_heFPVx","item_ELq4pi"],"settings":{"heading":"<h2>Nos engagements :<\/h2>","heading_custom":false,"heading_font":"josefin_sans_n4","heading_size":16,"heading_size_mobile":16,"heading_height":150,"heading_align":"left","heading_align_mobile":"left","items_style":"grid","items_style_mobile":"slider","items_row":5,"items_row_mobile":1.3,"items_gap":20,"items_gap_mobile":20,"items_mt":28,"items_mt_mobile":22,"item_padding_vertical":24,"item_padding_vertical_mobile":24,"item_padding_horizontal":24,"item_padding_horizontal_mobile":24,"item_radius":8,"item_border_thickness":1,"item_shadow":true,"item_hover":true,"content_align":"start","content_align_mobile":"start","icon_size":56,"icon_size_mobile":56,"hide_icon":false,"title_custom":false,"title_font":"josefin_sans_n4","title_size":18,"title_size_mobile":18,"title_height":130,"title_mt":28,"title_mt_mobile":28,"text_custom":false,"text_font":"josefin_sans_n4","text_size":16,"text_size_mobile":16,"text_height":150,"text_mt":8,"text_mt_mobile":8,"dots_size":12,"dots_size_mobile":12,"dots_mt":32,"dots_show_desktop":true,"dots_show_mobile":true,"item_bg":"#ffffff","item_border_color":"#f1f2f2","item_shadow_color":"#42474c","title_color":"#000000","text_color":"#52525b","dots_color":"#52525b","heading_color":"#0a455f","background_color":"#ffffff","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":0,"padding_top":36,"padding_bottom":36,"padding_horizontal":0,"padding_horizontal_mobile":0,"full_width":true,"content_width":150,"border_thickness":0,"lazy":true}},"capital_club_footer1_6DgpXx":{"type":"CapitalClubFooter1","settings":{"body_gap":16,"body_gap_mobile":16,"content_padding_horizontal":60,"content_padding_horizontal_mobile":32,"content_padding_vertical":70,"content_padding_vertical_mobile":52,"content_radius":0,"content_top_gap":32,"content_top_gap_mobile":56,"newsletter_heading":"<h2>Rejoignez notre newsletter<\/h2>","newsletter_heading_custom":false,"newsletter_heading_font":"josefin_sans_n4","newsletter_heading_size":20,"newsletter_heading_size_mobile":16,"newsletter_heading_height":130,"newsletter_heading_align":"left","newsletter_heading_align_mobile":"left","form_radius":16,"form_border_thickness":0,"form_mt":16,"form_mt_mobile":16,"input_placeholder":"Email","input_custom":false,"input_font":"josefin_sans_n4","input_size":18,"input_size_mobile":14,"input_height":100,"input_padding_horizontal":20,"input_padding_horizontal_mobile":16,"input_padding_vertical":20,"input_padding_vertical_mobile":16,"submit_width":72,"submit_width_mobile":72,"submit_icon_size":20,"submit_icon_size_mobile":20,"newsletter_text":"<p>Recevez \"...\" gratuitement en vous inscrivant<\/p>","newsletter_text_custom":false,"newsletter_text_font":"josefin_sans_n4","newsletter_text_size":20,"newsletter_text_size_mobile":16,"newsletter_text_height":130,"newsletter_text_mt":76,"newsletter_text_mt_mobile":24,"newsletter_text_align":"left","newsletter_text_align_mobile":"left","menu":"footer","list_gap":24,"list_gap_mobile":24,"link_custom":false,"link_font":"josefin_sans_n4","link_size":20,"link_size_mobile":20,"link_height":130,"twitter":"","facebook":"","linkedin":"","instagram":"#","youtube":"","pinterest":"","whatsapp":"","tiktok":"#","social_list_gap":12,"social_list_gap_mobile":12,"social_icon_size":40,"social_icon_size_mobile":40,"logo_mt":68,"logo_mt_mobile":56,"logo_align":"center","logo_align_mobile":"center","logo_width":70,"logo_width_mobile":70,"logo_text":"<h2>Capital.Club<\/h2>","logo_text_custom":false,"logo_text_font":"josefin_sans_n4","logo_text_size":72,"logo_text_size_mobile":36,"logo_text_height":100,"autoplay_delay":4,"image_radius":24,"image_border_thickness":0,"tag_custom":false,"tag_font":"josefin_sans_n4","tag_size":20,"tag_size_mobile":16,"tag_height":100,"tag_padding_horizontal":12,"tag_padding_horizontal_mobile":12,"tag_padding_vertical":8,"tag_padding_vertical_mobile":8,"tag_radius":100,"content_bg_color":"#f2f2f2","newsletter_heading_color":"#000000","newsletter_text_color":"#000000","form_border_color":"#000000","input_color":"#000000","input_placeholder_color":"#999999","input_bg_color":"#ffffff","submit_icon_color":"#ffffff","submit_icon_hover_color":"#ffffff","submit_bg_color":"#000000","submit_bg_hover_color":"#333333","link_color":"#000000","link_hover_color":"#000000","social_icon_color":"#ffffff","social_icon_hover_color":"#ffffff","social_icon_bg_color":"#000000","social_icon_bg_hover_color":"#333333","logo_text_color":"#121212","tag_color":"#000000","tag_bg_color":"#ffffff","image_border_color":"#000000","background_color":"#ffffff","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":0,"margin_horizontal":0,"margin_horizontal_mobile":0,"padding_top":36,"padding_bottom":36,"padding_horizontal":0,"padding_horizontal_mobile":0,"full_width":true,"content_width":1500,"border_thickness":0,"section_radius":0,"lazy":true}},"footer":{"type":"footer","disabled":true,"settings":{"color_scheme":"scheme-1","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":true,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["capital_club_trust_badges_9cxzWL","capital_club_footer1_6DgpXx","footer"]}
-=======
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -142,6 +139,71 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "1775396147569779fe": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_9a8ca1a_bw8cxN": {
+          "type": "ai_gen_block_9a8ca1a",
+          "settings": {
+            "columns_desktop": "4",
+            "columns_mobile": "1",
+            "desktop_width_percent": 100,
+            "show_column_1": true,
+            "column_1_heading": "À propos",
+            "column_1_text": "<p>Votre boutique de thé naturel</p>",
+            "show_social_icons": true,
+            "social_facebook": "",
+            "social_instagram": "",
+            "social_twitter": "",
+            "social_youtube": "",
+            "show_column_2": true,
+            "column_2_heading": "Liens rapides",
+            "column_2_menu": "",
+            "show_column_3": true,
+            "column_3_heading": "Aide",
+            "column_3_menu": "",
+            "show_newsletter": true,
+            "newsletter_heading": "Newsletter",
+            "newsletter_text": "<p>Inscrivez-vous pour recevoir nos offres</p>",
+            "newsletter_placeholder": "Votre email",
+            "newsletter_button_text": "S'inscrire",
+            "newsletter_success_message": "Merci de votre inscription !",
+            "copyright_text": "© 2026 Thé Naturel. Tous droits réservés.",
+            "bottom_text_alignment": "center",
+            "show_payment_icons": true,
+            "background_color": "#242833",
+            "text_color": "#ffffff",
+            "heading_color": "#ffffff",
+            "link_color": "#ffffff",
+            "link_hover_color": "#35b578",
+            "divider_color": "#3d4252",
+            "bottom_text_color": "#a0a0a0",
+            "social_icon_color": "#ffffff",
+            "social_icon_hover_color": "#35b578",
+            "button_color": "#35b578",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#2a9460",
+            "input_background_color": "#ffffff",
+            "input_border_color": "#cccccc",
+            "success_color": "#35b578",
+            "error_color": "#D82C0D",
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "heading_size": 18,
+            "text_size": 14,
+            "bottom_text_size": 12,
+            "social_icon_size": 24,
+            "input_border_radius": 4,
+            "button_border_radius": 4
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_9a8ca1a_bw8cxN"
+      ],
+      "settings": {}
     },
     "capital_club_footer1_6DgpXx": {
       "type": "CapitalClubFooter1",
@@ -296,8 +358,8 @@
   },
   "order": [
     "capital_club_trust_badges_9cxzWL",
+    "1775396147569779fe",
     "capital_club_footer1_6DgpXx",
     "footer"
   ]
 }
->>>>>>> 9bbcdc279223aa8f95eaa2b57b88b7012e1043ce
