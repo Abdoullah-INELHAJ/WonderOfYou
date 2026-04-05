@@ -104,9 +104,53 @@
       assign has_app_block = true
     endif
   endfor
+
+  assign transparent_enabled = false
+  if section.settings.transparent_header
+    if section.settings.transparent_header_home_only == false or request.page_type == 'index'
+      assign transparent_enabled = true
+    endif
+  endif
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- if transparent_enabled -%}
+  <style>
+    .header-wrapper--transparent {
+      position: absolute;
+      width: 100%;
+      background: transparent !important;
+      border: none !important;
+      z-index: 100;
+      transition: background 0.3s ease;
+    }
+    .header-wrapper--transparent .header__icon,
+    .header-wrapper--transparent .header__menu-item,
+    .header-wrapper--transparent .header__heading-link,
+    .header-wrapper--transparent .header__heading span {
+      color: {{ section.settings.transparent_text_color }} !important;
+    }
+    .header-wrapper--transparent .svg-wrapper svg {
+      fill: {{ section.settings.transparent_text_color }} !important;
+    }
+    
+    /* Restoration when sticky */
+    .shopify-section-header-sticky .header-wrapper--transparent {
+      position: fixed;
+      background: rgb(var(--color-background)) !important;
+    }
+    .shopify-section-header-sticky .header-wrapper--transparent .header__icon,
+    .shopify-section-header-sticky .header-wrapper--transparent .header__menu-item,
+    .shopify-section-header-sticky .header-wrapper--transparent .header__heading-link,
+    .shopify-section-header-sticky .header-wrapper--transparent .header__heading span {
+      color: rgba(var(--color-foreground), 0.75) !important;
+    }
+    .shopify-section-header-sticky .header-wrapper--transparent .svg-wrapper svg {
+      fill: currentColor !important;
+    }
+  </style>
+{%- endif -%}
+
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if transparent_enabled %} header-wrapper--transparent{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -519,6 +563,24 @@
       ],
       "default": "on-scroll-up",
       "label": "t:sections.header.settings.sticky_header_type.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "transparent_header",
+      "default": false,
+      "label": "Activer le header transparent"
+    },
+    {
+      "type": "checkbox",
+      "id": "transparent_header_home_only",
+      "default": true,
+      "label": "Uniquement sur la page d'accueil"
+    },
+    {
+      "type": "color",
+      "id": "transparent_text_color",
+      "default": "#ffffff",
+      "label": "Couleur du texte (quand transparent)"
     },
     {
       "type": "checkbox",
