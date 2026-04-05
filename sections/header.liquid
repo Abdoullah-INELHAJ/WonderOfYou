@@ -154,6 +154,9 @@
   .header {
     width: {{ section.settings.header_width }}% !important;
     max-width: {{ section.settings.header_width }}% !important;
+    min-height: {{ section.settings.header_height }}px !important;
+    display: flex !important;
+    align-items: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -164,6 +167,7 @@
       grid-template-areas: 'menu logo icons' !important;
       grid-template-columns: 1fr auto 1fr !important;
       align-items: center !important;
+      min-height: {{ section.settings.header_height }}px !important;
     }
 
     .header--middle-center-menu-left .header__inline-menu {
@@ -565,6 +569,16 @@
       "step": 1,
       "unit": "%",
       "label": "Largeur du header",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "header_height",
+      "min": 40,
+      "max": 250,
+      "step": 1,
+      "unit": "px",
+      "label": "Hauteur du header",
       "default": 100
     },
     {
