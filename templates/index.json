@@ -324,7 +324,7 @@
         "button_ritVnN": {
           "type": "button",
           "settings": {
-            "button_label": "Texte du bouton",
+            "button_label": "JE CRAQUE",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -358,7 +358,7 @@
         "heading_nrA9mM": {
           "type": "heading",
           "settings": {
-            "heading": "<h2>à propos de \"nom marque\"</h2>",
+            "heading": "<p>Bien plus qu’un thé, une Thérapie !</p>",
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_size": 36,
@@ -372,10 +372,10 @@
         "text_m9q7Gk": {
           "type": "text",
           "settings": {
-            "text": "<p>Description/introduction de votre marque, de la valeur apportée par celle-ci et de ses valeurs</p>",
+            "text": "<p>Chez <strong>Ma Thérapie</strong>, nous croyons que chaque tasse doit agir pour votre bien-être. Nous avons conçu nos mélanges comme de véritables rituels de soin, où chaque ingrédient est sélectionné pour répondre à une problématique précise de votre quotidien.</p><p>Que vous cherchiez à retrouver votre <strong>énergie</strong>, à faciliter votre <strong>digestion</strong>, à favoriser votre <strong>minceur</strong> ou à préparer un <strong>sommeil</strong> réparateur, nos cures de 28 jours vous accompagnent avec gourmandise et efficacité. Ne vous contentez plus de boire un thé, offrez-vous une thérapie naturelle pour harmoniser votre corps et votre esprit.</p>",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
-            "text_size": 16,
+            "text_size": 14,
             "text_size_mobile": 14,
             "text_mt": 24,
             "text_mt_mobile": 16,
@@ -385,7 +385,7 @@
         "button_L69JWh": {
           "type": "button",
           "settings": {
-            "button": "Call to action",
+            "button": "DECOUVRIR MA CURE !",
             "button_url": "",
             "button_custom": false,
             "button_font": "josefin_sans_n4",
@@ -421,7 +421,7 @@
             "scrolling_mb": 12,
             "scrolling_type": "vertical",
             "reverse_direction": false,
-            "text": "\"Point fort\"",
+            "text": "100% Bio & Naturel",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 60,
@@ -453,6 +453,7 @@
         "content_padding_vertical_mobile": 16,
         "content_padding_horizontal": 32,
         "content_padding_horizontal_mobile": 16,
+        "image": "shopify://shop_images/Avanteges_be26c637-78ea-48f8-b477-674c643cfd75.png",
         "image_position": "right",
         "image_position_mobile": "top",
         "image_ratio": "square",
