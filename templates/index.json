@@ -358,7 +358,7 @@
         "heading_qityx3": {
           "type": "heading",
           "settings": {
-            "heading": "Ne manquez aucune étape de votre transformation.",
+            "heading": "Ne manquez aucune étape de votre transformation !",
             "heading_size": "h1"
           }
         },
@@ -490,7 +490,7 @@
         "image": "shopify://shop_images/Avanteges_be26c637-78ea-48f8-b477-674c643cfd75.png",
         "image_position": "right",
         "image_position_mobile": "top",
-        "image_ratio": "square",
+        "image_ratio": "original",
         "image_ratio_mobile": "square",
         "background_color": "#ffffff",
         "background_gradient": "",
