@@ -310,14 +310,14 @@
         "heading_kMUzVw": {
           "type": "heading",
           "settings": {
-            "heading": "Image avec texte",
+            "heading": "LE COFFRET MINCEUR",
             "heading_size": "h1"
           }
         },
         "text_FxY9Fr": {
           "type": "text",
           "settings": {
-            "text": "<p>Associez un texte à une image pour mettre en avant le produit, la collection ou l’article de blog de votre choix. Ajoutez des informations sur la disponibilité ou le style. Vous pouvez même fournir un avis.</p>",
+            "text": "<p>Révélez la meilleure version de vous-même avec le duo Minceur & Énergie : l'alliance parfaite du goût et de l'efficacité pour sculpter votre routine ! </p>",
             "text_style": "body"
           }
         },
@@ -339,7 +339,7 @@
       "settings": {
         "image": "shopify://shop_images/1775390958012-019d5d89-a8f4-7fad-9e51-3aabb645144e.png",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
