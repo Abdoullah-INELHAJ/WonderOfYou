@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+>>>>>>> 843bf2fa04c0d8dbe9d90097162ecc7fe0f4c25f
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -130,6 +142,71 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "1775396147569779fe": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_9a8ca1a_bw8cxN": {
+          "type": "ai_gen_block_9a8ca1a",
+          "settings": {
+            "columns_desktop": "4",
+            "columns_mobile": "1",
+            "desktop_width_percent": 100,
+            "show_column_1": true,
+            "column_1_heading": "À propos",
+            "column_1_text": "<p>Votre boutique de thé naturel</p>",
+            "show_social_icons": true,
+            "social_facebook": "",
+            "social_instagram": "",
+            "social_twitter": "",
+            "social_youtube": "",
+            "show_column_2": true,
+            "column_2_heading": "Liens rapides",
+            "column_2_menu": "",
+            "show_column_3": true,
+            "column_3_heading": "Aide",
+            "column_3_menu": "",
+            "show_newsletter": true,
+            "newsletter_heading": "Newsletter",
+            "newsletter_text": "<p>Inscrivez-vous pour recevoir nos offres</p>",
+            "newsletter_placeholder": "Votre email",
+            "newsletter_button_text": "S'inscrire",
+            "newsletter_success_message": "Merci de votre inscription !",
+            "copyright_text": "© 2026 Thé Naturel. Tous droits réservés.",
+            "bottom_text_alignment": "center",
+            "show_payment_icons": true,
+            "background_color": "#242833",
+            "text_color": "#ffffff",
+            "heading_color": "#ffffff",
+            "link_color": "#ffffff",
+            "link_hover_color": "#35b578",
+            "divider_color": "#3d4252",
+            "bottom_text_color": "#a0a0a0",
+            "social_icon_color": "#ffffff",
+            "social_icon_hover_color": "#35b578",
+            "button_color": "#35b578",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#2a9460",
+            "input_background_color": "#ffffff",
+            "input_border_color": "#cccccc",
+            "success_color": "#35b578",
+            "error_color": "#D82C0D",
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "heading_size": 18,
+            "text_size": 14,
+            "bottom_text_size": 12,
+            "social_icon_size": 24,
+            "input_border_radius": 4,
+            "button_border_radius": 4
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_9a8ca1a_bw8cxN"
+      ],
+      "settings": {}
     },
     "capital_club_footer1_6DgpXx": {
       "type": "CapitalClubFooter1",
@@ -284,6 +361,7 @@
   },
   "order": [
     "capital_club_trust_badges_9cxzWL",
+    "1775396147569779fe",
     "capital_club_footer1_6DgpXx",
     "footer"
   ]
