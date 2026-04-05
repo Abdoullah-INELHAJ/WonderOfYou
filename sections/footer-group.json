@@ -19,7 +19,7 @@
           "settings": {
             "icon": "payment",
             "title": "Paiment sécurisé",
-            "text": "text",
+            "text": "Achetez en toute sérénité grâce à notre protocole SSL 100% crypté.",
             "url": "",
             "icon_color": "#ffffff",
             "icon_bg_color": "#121212",
@@ -31,7 +31,7 @@
           "settings": {
             "icon": "box",
             "title": "Livraison offerte",
-            "text": "text",
+            "text": "Profitez de la livraison gratuite à domicile ou en point relais dès 40€ d'achat",
             "url": "",
             "icon_color": "#ffffff",
             "icon_bg_color": "#121212",
@@ -43,7 +43,7 @@
           "settings": {
             "icon": "return",
             "title": "Satisfait ou remboursé",
-            "text": "text",
+            "text": "Vous avez 14 jours pour changer d'avis et nous retourner vos produits intacts.",
             "url": "",
             "icon_color": "#ffffff",
             "icon_bg_color": "#121212",
@@ -55,7 +55,7 @@
           "settings": {
             "icon": "chat",
             "title": "Service client",
-            "text": "text",
+            "text": "Une question sur une cure ? Notre équipe vous répond avec le sourire sous 24h.",
             "url": "",
             "icon_color": "#ffffff",
             "icon_bg_color": "#121212",
@@ -73,7 +73,7 @@
         "heading": "<h2>Nos engagements :</h2>",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
-        "heading_size": 16,
+        "heading_size": 28,
         "heading_size_mobile": 16,
         "heading_height": 150,
         "heading_align": "center",
