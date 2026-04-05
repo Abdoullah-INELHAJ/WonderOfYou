@@ -39,13 +39,13 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-center-menu-left",
+        "logo_position": "middle-center",
         "header_width": 90,
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "transparent_header": true,
-        "transparent_header_home_only": false,
+        "transparent_header_home_only": true,
         "transparent_text_color": "#ffffff",
         "show_line_separator": false,
         "color_scheme": "scheme-1",
