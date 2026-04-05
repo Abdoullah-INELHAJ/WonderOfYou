@@ -1,1 +1,149 @@
-{"name":"t:sections.header.name","type":"header","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-bar-0":{"type":"announcement","settings":{"text":"Welcome to our store","link":""}}},"block_order":["announcement-bar-0"],"disabled":true,"settings":{"color_scheme":"scheme-1","show_line_separator":true,"show_social":false,"auto_rotate":false,"change_slides_speed":5,"enable_country_selector":false,"enable_language_selector":false}},"header":{"type":"header","settings":{"logo_position":"middle-left","menu":"main-menu","menu_type_desktop":"dropdown","sticky_header_type":"on-scroll-up","show_line_separator":true,"color_scheme":"scheme-1","menu_color_scheme":"scheme-1","enable_country_selector":true,"enable_language_selector":true,"enable_customer_avatar":true,"mobile_logo_position":"center","margin_bottom":0,"padding_top":0,"padding_bottom":0}},"capital_club_header2_iiPbzX":{"type":"CapitalClubHeader2","blocks":{"review_item_3x6FJF":{"type":"review_item","settings":{"stars_icon":"shopify:\/\/shop_images\/Design_sans_titre.svg","stars_count":5,"stars_size":16,"stars_size_mobile":16,"text":"4.9 out of 5","url":"","text_custom":false,"text_font":"josefin_sans_n4","text_size":12,"text_size_mobile":12,"text_height":100,"stars_bg_color":"#00b67a","stars_color":"#ffffff","text_color":"#000000"}},"left_item_dkMCiC":{"type":"left_item","settings":{"icon":"shop","text":"Offre du moment","url":""}},"left_item_AyNJr6":{"type":"left_item","settings":{"icon":"love","text":"Trust","url":""}},"left_item_hwJzcx":{"type":"left_item","settings":{"icon":"mobile","text":"Garantie","url":""}}},"block_order":["review_item_3x6FJF","left_item_dkMCiC","left_item_AyNJr6","left_item_hwJzcx"],"settings":{"insert_css_class_target":".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper","show_right_mobile":false,"animate_speed":70,"animate_direction":"left","animate_pause":true,"items_gap":20,"items_gap_mobile":20,"item_gap":10,"item_gap_mobile":10,"icon_size":10,"icon_size_mobile":10,"text_custom":false,"text_font":"josefin_sans_n4","text_size":12,"text_size_mobile":12,"text_height":100,"icon_color":"#000000","text_color":"#000000","background_color":"#ececec","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":0,"padding_top":12,"padding_bottom":12,"padding_horizontal":2,"padding_horizontal_mobile":1,"full_width":true,"content_width":1200,"border_thickness":0}}},"order":["announcement-bar","header","capital_club_header2_iiPbzX"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "capital_club_header2_iiPbzX": {
+      "type": "CapitalClubHeader2",
+      "blocks": {
+        "review_item_3x6FJF": {
+          "type": "review_item",
+          "settings": {
+            "stars_count": 5,
+            "stars_size": 16,
+            "stars_size_mobile": 16,
+            "text": "4.9 out of 5",
+            "url": "",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 12,
+            "text_size_mobile": 12,
+            "text_height": 100,
+            "stars_bg_color": "#00b67a",
+            "stars_color": "#ffffff",
+            "text_color": "#000000"
+          }
+        },
+        "left_item_dkMCiC": {
+          "type": "left_item",
+          "settings": {
+            "icon": "shop",
+            "text": "Offre du moment",
+            "url": ""
+          }
+        },
+        "left_item_AyNJr6": {
+          "type": "left_item",
+          "settings": {
+            "icon": "love",
+            "text": "Trust",
+            "url": ""
+          }
+        },
+        "left_item_hwJzcx": {
+          "type": "left_item",
+          "settings": {
+            "icon": "mobile",
+            "text": "Garantie",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_item_3x6FJF",
+        "left_item_dkMCiC",
+        "left_item_AyNJr6",
+        "left_item_hwJzcx"
+      ],
+      "settings": {
+        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
+        "show_right_mobile": false,
+        "animate_speed": 70,
+        "animate_direction": "left",
+        "animate_pause": true,
+        "items_gap": 20,
+        "items_gap_mobile": 20,
+        "item_gap": 10,
+        "item_gap_mobile": 10,
+        "icon_size": 10,
+        "icon_size_mobile": 10,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 100,
+        "icon_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ececec",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 2,
+        "padding_horizontal_mobile": 1,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "capital_club_header2_iiPbzX"
+  ]
+}
