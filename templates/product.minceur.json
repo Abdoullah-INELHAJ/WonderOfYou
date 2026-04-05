@@ -484,6 +484,7 @@
         "content_padding_vertical_mobile": 16,
         "content_padding_horizontal": 32,
         "content_padding_horizontal_mobile": 16,
+        "image": "shopify://shop_images/Comparaison_b0987278-55fa-4f80-bd8f-24f9ec67d6f6.png",
         "image_position": "right",
         "image_position_mobile": "top",
         "image_ratio": "square",
@@ -597,7 +598,8 @@
             "tab_title": "Ingrédient 1",
             "title": "Title",
             "text": "<p>Text</p>",
-            "sub_text": "<p>Subtext</p>"
+            "sub_text": "<p>Subtext</p>",
+            "image": "shopify://shop_images/Instruction_f7392d7a-1c82-485b-9078-bc760267a7ea.png"
           }
         },
         "feature_GGVTtd": {
@@ -607,7 +609,8 @@
             "tab_title": "Ingrédient 2",
             "title": "Title",
             "text": "<p>Text</p>",
-            "sub_text": "<p>Subtext</p>"
+            "sub_text": "<p>Subtext</p>",
+            "image": "shopify://shop_images/Instruction_f7392d7a-1c82-485b-9078-bc760267a7ea.png"
           }
         },
         "feature_A9a6Jc": {
@@ -617,7 +620,8 @@
             "tab_title": "Ingrédient 3",
             "title": "Title",
             "text": "<p>Text</p>",
-            "sub_text": "<p>Subtext</p>"
+            "sub_text": "<p>Subtext</p>",
+            "image": "shopify://shop_images/Instruction_f7392d7a-1c82-485b-9078-bc760267a7ea.png"
           }
         }
       },
@@ -788,6 +792,7 @@
         "testimonial_xxH8fx",
         "testimonial_tW8Nrc"
       ],
+      "disabled": true,
       "settings": {
         "body_gap": 60,
         "body_gap_mobile": 20,
