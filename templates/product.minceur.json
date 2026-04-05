@@ -25,7 +25,7 @@
         "custom_liquid_rbGMxR": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n  p {\n    font-size: 14px;\n    line-height: 1.2;\n  }\n</style>\n\n<p>🗸 Bullet point #1</p>\n<p>🗸 Bullet point #2</p>\n<p>🗸 Bullet point #3</p>"
+            "custom_liquid": "<style>\n  p {\n    font-size: 14px;\n    line-height: 1.2;\n  }\n</style>\n\n<p>🍑 Gourmandise & Bien-être : Une cure de 28 jours sans théine (idéale toute la journée) aux notes savoureuses de pêche et de citron pour allier plaisir et objectifs minceur.</p>\n<p>🌿 Ventre Plat & Digestion : Enrichi en rooibos et feuilles d'olivier pour réduire les ballonnements et retrouver une sensation de légèreté après chaque repas.</p>\n<p>🔥 Action Brûle-Graisse & Detox : Un mélange puissant à base de maté et thé vert pour stimuler le métabolisme et favoriser la perte de poids naturellement.</p>"
           }
         },
         "price": {
@@ -211,6 +211,7 @@
         "slide_hqz4Ut",
         "slide_76QeAp"
       ],
+      "disabled": true,
       "settings": {
         "slider_view": 5,
         "slider_view_mobile": 2,
@@ -507,6 +508,7 @@
     },
     "capital_club_avant_apres1_Xwi6mL": {
       "type": "CapitalClubAvantApres1",
+      "disabled": true,
       "settings": {
         "content_align": "center",
         "content_align_mobile": "center",
