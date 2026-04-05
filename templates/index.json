@@ -354,6 +354,9 @@
     },
     "featured_collection_mUKqka": {
       "type": "featured-collection",
+      "custom_css": [
+        "{text-align: center;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Trouvez votre thérapie naturelle",
