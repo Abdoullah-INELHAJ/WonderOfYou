@@ -190,84 +190,6 @@
         "lazy": false
       }
     },
-    "capital_club_slide_logo_cd3cUF": {
-      "type": "CapitalClubSlideLogo",
-      "blocks": {
-        "slide_p8kfX6": {
-          "type": "slide",
-          "settings": {
-            "link": ""
-          }
-        },
-        "slide_G9zeBP": {
-          "type": "slide",
-          "settings": {
-            "link": ""
-          }
-        },
-        "slide_qhAb7m": {
-          "type": "slide",
-          "settings": {
-            "link": ""
-          }
-        },
-        "slide_7BWFqh": {
-          "type": "slide",
-          "settings": {
-            "link": ""
-          }
-        },
-        "slide_dFzNbz": {
-          "type": "slide",
-          "settings": {
-            "link": ""
-          }
-        },
-        "slide_XTbjQP": {
-          "type": "slide",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_p8kfX6",
-        "slide_G9zeBP",
-        "slide_qhAb7m",
-        "slide_7BWFqh",
-        "slide_dFzNbz",
-        "slide_XTbjQP"
-      ],
-      "settings": {
-        "ss-title": "Vu dans/Nous font confiance :",
-        "heading_custom": false,
-        "heading_font": "assistant_n4",
-        "header_size": 30,
-        "header_align": "center",
-        "scrolling_velocity": 10,
-        "pause_hover": false,
-        "shadow": false,
-        "sliders_mt": 16,
-        "logo_padding_top": 0,
-        "logo_padding_bottom": 0,
-        "slider_gap": 30,
-        "slider_gap_mobile": 30,
-        "slider_direction": "left",
-        "icon_width": 200,
-        "header_color": "#121212",
-        "border_color": "#ffffff",
-        "background-color": "#ffffff",
-        "slider-background-color": "#ffffff",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "full_width": true,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -382,13 +304,127 @@
         "lazy": true
       }
     },
+    "image_with_text_Aqpjwa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kMUzVw": {
+          "type": "heading",
+          "settings": {
+            "heading": "LE COFFRET MINCEUR",
+            "heading_size": "h1"
+          }
+        },
+        "text_FxY9Fr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Révélez la meilleure version de vous-même avec le duo Minceur & Énergie : l'alliance parfaite du goût et de l'efficacité pour sculpter votre routine ! </p>",
+            "text_style": "body"
+          }
+        },
+        "button_ritVnN": {
+          "type": "button",
+          "settings": {
+            "button_label": "JE CRAQUE",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kMUzVw",
+        "text_FxY9Fr",
+        "button_ritVnN"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/1775390958012-019d5d89-a8f4-7fad-9e51-3aabb645144e.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_mUKqka": {
+      "type": "featured-collection",
+      "custom_css": [
+        "{text-align: center;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Trouvez votre thérapie naturelle !",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "therapie",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "blob",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_K793Mm": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_qityx3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ne manquez aucune étape de votre transformation !",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_cGheL3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Accès prioritaire aux nouvelles cures, offres secrètes et guides de santé naturelle. Soyez la première informée de nos ventes privées pour prendre soin de vous, sans attendre.</p>"
+          }
+        },
+        "email_form_HGKYeV": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_qityx3",
+        "paragraph_cGheL3",
+        "email_form_HGKYeV"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "capital_club_presentation_marque_R633wi": {
       "type": "CapitalClubPresentationMarque",
       "blocks": {
         "heading_nrA9mM": {
           "type": "heading",
           "settings": {
-            "heading": "<h2>à propos de \"nom marque\"</h2>",
+            "heading": "<p>Bien plus qu’un thé, une Thérapie !</p>",
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_size": 36,
@@ -402,10 +438,10 @@
         "text_m9q7Gk": {
           "type": "text",
           "settings": {
-            "text": "<p>Description/introduction de votre marque, de la valeur apportée par celle-ci et de ses valeurs</p>",
+            "text": "<p>Chez <strong>Ma Thérapie</strong>, nous croyons que chaque tasse doit agir pour votre bien-être. Nous avons conçu nos mélanges comme de véritables rituels de soin, où chaque ingrédient est sélectionné pour répondre à une problématique précise de votre quotidien.</p><p>Que vous cherchiez à retrouver votre <strong>énergie</strong>, à faciliter votre <strong>digestion</strong>, à favoriser votre <strong>minceur</strong> ou à préparer un <strong>sommeil</strong> réparateur, nos cures de 28 jours vous accompagnent avec gourmandise et efficacité. Ne vous contentez plus de boire un thé, offrez-vous une thérapie naturelle pour harmoniser votre corps et votre esprit.</p>",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
-            "text_size": 16,
+            "text_size": 14,
             "text_size_mobile": 14,
             "text_mt": 24,
             "text_mt_mobile": 16,
@@ -415,7 +451,7 @@
         "button_L69JWh": {
           "type": "button",
           "settings": {
-            "button": "Call to action",
+            "button": "DECOUVRIR MA CURE !",
             "button_url": "",
             "button_custom": false,
             "button_font": "josefin_sans_n4",
@@ -451,7 +487,7 @@
             "scrolling_mb": 12,
             "scrolling_type": "vertical",
             "reverse_direction": false,
-            "text": "\"Point fort\"",
+            "text": "100% Bio & Naturel",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 60,
@@ -483,6 +519,7 @@
         "content_padding_vertical_mobile": 16,
         "content_padding_horizontal": 32,
         "content_padding_horizontal_mobile": 16,
+        "image": "shopify://shop_images/Avanteges_be26c637-78ea-48f8-b477-674c643cfd75.png",
         "image_position": "right",
         "image_position_mobile": "top",
         "image_ratio": "square",
@@ -504,562 +541,16 @@
         "section_radius": 0,
         "lazy": true
       }
-    },
-    "capital_club_videotestimonials2_LnkN9a": {
-      "type": "CapitalClubVideotestimonials2",
-      "blocks": {
-        "slide_yb98nG": {
-          "type": "slide",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "title": "@CapitalClub",
-            "stars_count": 5
-          }
-        },
-        "slide_zLd8ec": {
-          "type": "slide",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "title": "@CapitalClub",
-            "stars_count": 5
-          }
-        },
-        "slide_4HzbVn": {
-          "type": "slide",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "title": "@CapitalClub",
-            "stars_count": 5
-          }
-        },
-        "slide_YWTc66": {
-          "type": "slide",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "title": "@CapitalClub",
-            "stars_count": 5
-          }
-        },
-        "slide_LVQz7a": {
-          "type": "slide",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "title": "@CapitalClub",
-            "stars_count": 5
-          }
-        }
-      },
-      "block_order": [
-        "slide_yb98nG",
-        "slide_zLd8ec",
-        "slide_4HzbVn",
-        "slide_YWTc66",
-        "slide_LVQz7a"
-      ],
-      "settings": {
-        "slider_view": 5,
-        "slider_view_mobile": 2,
-        "slider_gap": 10,
-        "slider_gap_mobile": 10,
-        "slider_rotate": 0,
-        "card_padding_vertical": 20,
-        "card_padding_vertical_mobile": 20,
-        "card_padding_horizontal": 20,
-        "card_padding_horizontal_mobile": 20,
-        "card_radius": 16,
-        "card_border_thickness": 0,
-        "card_shadow": false,
-        "card_ratio": "portrait",
-        "card_ratio_mobile": "portrait",
-        "card_overlay": 0.2,
-        "content_horizontal_position": "center",
-        "content_horizontal_position_mobile": "center",
-        "content_vertical_position": "end",
-        "content_vertical_position_mobile": "end",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 16,
-        "title_size_mobile": 16,
-        "title_height": 100,
-        "stars_size": 16,
-        "stars_size_mobile": 16,
-        "stars_mt": 16,
-        "stars_mt_mobile": 16,
-        "hide_stars": false,
-        "use_action": true,
-        "action_size": 40,
-        "action_size_mobile": 40,
-        "action_icon_size": 24,
-        "action_icon_size_mobile": 24,
-        "action_border_thickness": 0,
-        "use_sound": true,
-        "sound_size": 40,
-        "sound_size_mobile": 40,
-        "sound_icon_size": 24,
-        "sound_icon_size_mobile": 24,
-        "sound_border_thickness": 0,
-        "arrow_size": 48,
-        "arrow_size_mobile": 48,
-        "arrow_icon_size": 8,
-        "arrow_icon_size_mobile": 8,
-        "arrow_border_thickness": 0,
-        "arrow_radius": 100,
-        "arrow_hover_effect": "color",
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": false,
-        "card_border_color": "#000000",
-        "card_shadow_color": "#000000",
-        "card_overlay_color": "#000000",
-        "title_color": "#ffffff",
-        "stars_color": "#ffffff",
-        "action_color": "#ffffff",
-        "action_hover_color": "#ffffff",
-        "action_bg_color": "#ffffff",
-        "action_bg_hover_color": "#ffffff",
-        "action_border_color": "#ffffff",
-        "action_border_hover_color": "#ffffff",
-        "sound_icon_color": "#ffffff",
-        "sound_icon_hover_color": "#ffffff",
-        "sound_bg_color": "#ffffff",
-        "sound_bg_hover_color": "#ffffff",
-        "sound_border_color": "#ffffff",
-        "sound_border_hover_color": "#ffffff",
-        "arrow_color": "#ffffff",
-        "arrow_hover_color": "#434343",
-        "arrow_bg_color": "#434343",
-        "arrow_bg_hover_color": "#ffffff",
-        "arrow_border_color": "#000000",
-        "arrow_border_hover_color": "#000000",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
-    "capital_club_ingredients1_PFhqW4": {
-      "type": "CapitalClubIngredients1",
-      "blocks": {
-        "feature_xaB98B": {
-          "type": "feature",
-          "settings": {
-            "icon": "atc",
-            "tab_title": "ingrédient 1",
-            "title": "Title",
-            "text": "<p>Text</p>",
-            "sub_text": "<p>Subtext</p>"
-          }
-        },
-        "feature_L6rhdd": {
-          "type": "feature",
-          "settings": {
-            "icon": "atc",
-            "tab_title": "ingrédient 2",
-            "title": "Title",
-            "text": "<p>Text</p>",
-            "sub_text": "<p>Subtext</p>"
-          }
-        },
-        "feature_FWAchw": {
-          "type": "feature",
-          "settings": {
-            "icon": "atc",
-            "tab_title": "ingrédient 3",
-            "title": "Title",
-            "text": "<p>Text</p>",
-            "sub_text": "<p>Subtext</p>"
-          }
-        }
-      },
-      "block_order": [
-        "feature_xaB98B",
-        "feature_L6rhdd",
-        "feature_FWAchw"
-      ],
-      "settings": {
-        "body_layout": "text_image",
-        "body_gap": 92,
-        "content_align": "center",
-        "content_align_mobile": "center",
-        "heading": "<h2>Ingrédients ou étapes produit</h2>",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 36,
-        "heading_size_mobile": 24,
-        "heading_height": 130,
-        "sub_heading": "<p>Subheading</p>",
-        "sub_heading_custom": false,
-        "sub_heading_font": "josefin_sans_n4",
-        "sub_heading_size": 18,
-        "sub_heading_size_mobile": 16,
-        "sub_heading_height": 150,
-        "sub_heading_mt": 16,
-        "sub_heading_mt_mobile": 24,
-        "icons_padding_horizontal": 6,
-        "icons_padding_horizontal_mobile": 6,
-        "icons_padding_vertical": 4,
-        "icons_padding_vertical_mobile": 4,
-        "icons_radius": 100,
-        "icons_gap": 16,
-        "icons_gap_mobile": 10,
-        "icons_mt": 48,
-        "icons_mt_mobile": 40,
-        "use_autoplay": true,
-        "icons_autoplay_delay": 6,
-        "icon_size": 22,
-        "icon_size_mobile": 18,
-        "tab_title_custom": false,
-        "tab_title_font": "josefin_sans_n4",
-        "tab_title_size": 12,
-        "tab_title_size_mobile": 12,
-        "tab_title_height": 130,
-        "tab_title_mt": 6,
-        "tab_title_mt_mobile": 10,
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 20,
-        "title_size_mobile": 16,
-        "title_height": 130,
-        "title_mt": 52,
-        "title_mt_mobile": 40,
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 14,
-        "text_size_mobile": 14,
-        "text_height": 150,
-        "text_mt": 12,
-        "text_mt_mobile": 10,
-        "sub_text_custom": false,
-        "sub_text_font": "josefin_sans_n4",
-        "sub_text_size": 12,
-        "sub_text_size_mobile": 12,
-        "sub_text_height": 130,
-        "sub_text_mt": 10,
-        "sub_text_mt_mobile": 8,
-        "button": "Call to action",
-        "button_url": "",
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 14,
-        "button_size_mobile": 14,
-        "button_height": 100,
-        "button_padding_horizontal": 32,
-        "button_padding_horizontal_mobile": 32,
-        "button_padding_vertical": 10,
-        "button_padding_vertical_mobile": 10,
-        "button_radius": 100,
-        "button_border_thickness": 1,
-        "button_mt": 52,
-        "button_mt_mobile": 52,
-        "button_style": "outline",
-        "image_width": 40,
-        "image_ratio": "square",
-        "image_ratio_mobile": "landscape",
-        "image_radius": 12,
-        "images_mt_mobile": 40,
-        "tab_title_color": "#39392d",
-        "icon_color": "#39392d",
-        "icon_bg_color": "#ffffff",
-        "icons_bg_color": "#e7e7e2",
-        "circle_color": "#f4f5f0",
-        "circle_active_color": "#ff6a1b",
-        "title_color": "#39392d",
-        "text_color": "#39392d",
-        "sub_text_color": "#39392d",
-        "button_color": "#ffffff",
-        "button_hover_color": "#39392d",
-        "button_bg_color": "#39392d",
-        "button_bg_hover_color": "#f9f9f6",
-        "button_border_color": "#39392d",
-        "button_border_hover_color": "#39392d",
-        "heading_color": "#39392d",
-        "sub_heading_color": "#39392d",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
-    "capital_club_avant_apres1_jXmW4x": {
-      "type": "CapitalClubAvantApres1",
-      "settings": {
-        "content_align": "center",
-        "content_align_mobile": "center",
-        "title": "<h2>Avant/Après</h2>",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 36,
-        "title_size_mobile": 26,
-        "title_height": 130,
-        "text": "<p>bénéfices du avant/après / description du avant après produit</p>",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 20,
-        "text_size_mobile": 16,
-        "text_height": 130,
-        "text_margin_top": 20,
-        "text_margin_top_mobile": 16,
-        "body_gap": 100,
-        "body_gap_mobile": 24,
-        "body_margin_top": 50,
-        "body_margin_top_mobile": 30,
-        "items_gap": 30,
-        "items_gap_mobile": 30,
-        "item_content_align": "center",
-        "item_content_align_mobile": "center",
-        "icon_size": 44,
-        "icon_size_mobile": 36,
-        "item_title_custom": false,
-        "item_title_font": "josefin_sans_n4",
-        "item_title_size": 18,
-        "item_title_size_mobile": 14,
-        "item_title_height": 130,
-        "item_title_margin_top": 10,
-        "item_title_margin_top_mobile": 10,
-        "item_text_custom": false,
-        "item_text_font": "josefin_sans_n4",
-        "item_text_size": 16,
-        "item_text_size_mobile": 13,
-        "item_text_height": 150,
-        "item_text_margin_top": 10,
-        "item_text_margin_top_mobile": 10,
-        "image_radius": 500,
-        "image_border_thickness": 0,
-        "image_ratio": "landscape",
-        "image_ratio_mobile": "landscape",
-        "btn_size": 56,
-        "btn_size_mobile": 56,
-        "btn_arrow_size": 80,
-        "btn_arrow_size_mobile": 80,
-        "btn_border_thickness": 0,
-        "title_color": "#2e2a39",
-        "text_color": "#625f6b",
-        "icon_color": "#000000",
-        "item_title_color": "#2e2a39",
-        "item_text_color": "#625f6b",
-        "btn_bg_color": "#ffffff",
-        "btn_arrow_color": "#000000",
-        "btn_border_color": "#000000",
-        "line_color": "#ffffff",
-        "image_border_color": "#000000",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
-    "capital_club_testimonials1_PbHWNd": {
-      "type": "CapitalClubTestimonials1",
-      "blocks": {
-        "testimonial_rzJrmJ": {
-          "type": "testimonial",
-          "settings": {
-            "text": "<p>Testimonial text</p>",
-            "author": "Author"
-          }
-        },
-        "testimonial_FjDzHJ": {
-          "type": "testimonial",
-          "settings": {
-            "text": "<p>Testimonial text</p>",
-            "author": "Author"
-          }
-        },
-        "testimonial_iBjecp": {
-          "type": "testimonial",
-          "settings": {
-            "text": "<p>Testimonial text</p>",
-            "author": "Author"
-          }
-        },
-        "testimonial_VDpMLt": {
-          "type": "testimonial",
-          "settings": {
-            "text": "<p>Testimonial text</p>",
-            "author": "Author"
-          }
-        },
-        "testimonial_F4Ui7G": {
-          "type": "testimonial",
-          "settings": {
-            "text": "<p>Testimonial text</p>",
-            "author": "Author"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_rzJrmJ",
-        "testimonial_FjDzHJ",
-        "testimonial_iBjecp",
-        "testimonial_VDpMLt",
-        "testimonial_F4Ui7G"
-      ],
-      "settings": {
-        "body_gap": 60,
-        "body_gap_mobile": 20,
-        "content_padding_vertical": 30,
-        "content_padding_vertical_mobile": 20,
-        "content_horizontal_align": "start",
-        "content_horizontal_align_mobile": "center",
-        "stars_count": 5,
-        "stars_size": 18,
-        "review_before_text": "Excellent 4.7/5",
-        "review_after_text": "based on 147 reviews.",
-        "review_text_custom": false,
-        "review_text_font": "josefin_sans_n4",
-        "review_text_size": 14,
-        "review_text_size_mobile": 14,
-        "review_text_height": 130,
-        "heading": "<h2>Garantie produit</h2>",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 64,
-        "heading_size_mobile": 44,
-        "heading_height": 130,
-        "heading_mt": 8,
-        "heading_mt_mobile": 8,
-        "text": "<p>description des avis/testimonials de vos clients</p>",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 16,
-        "text_size_mobile": 14,
-        "text_height": 150,
-        "text_mt": 12,
-        "text_mt_mobile": 12,
-        "button": "Call to action",
-        "button_url": "",
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 16,
-        "button_size_mobile": 14,
-        "button_height": 100,
-        "button_mt": 36,
-        "button_mt_mobile": 24,
-        "button_padding_vertical": 12,
-        "button_padding_vertical_mobile": 12,
-        "button_padding_horizontal": 40,
-        "button_padding_horizontal_mobile": 40,
-        "button_radius": 100,
-        "button_border_thickness": 0,
-        "button_style": "non_outline",
-        "slider_gap": 20,
-        "slider_gap_mobile": 16,
-        "image_radius": 0,
-        "image_border_thickness": 0,
-        "image_ratio": "square",
-        "image_ratio_mobile": "square",
-        "slide_content_padding_vertical": 16,
-        "slide_content_padding_vertical_mobile": 16,
-        "slide_content_padding_horizontal": 10,
-        "slide_content_padding_horizontal_mobile": 10,
-        "slide_content_radius": 16,
-        "slide_content_border_thickness": 0,
-        "slide_content_mt": 20,
-        "slide_content_mt_mobile": 20,
-        "slide_text_custom": false,
-        "slide_text_font": "josefin_sans_n4",
-        "slide_text_size": 14,
-        "slide_text_size_mobile": 14,
-        "slide_text_height": 150,
-        "slide_author_custom": false,
-        "slide_author_font": "josefin_sans_n4",
-        "slide_author_size": 14,
-        "slide_author_size_mobile": 14,
-        "slide_author_height": 150,
-        "slide_author_mt": 10,
-        "slide_author_mt_mobile": 8,
-        "arrow_size": 40,
-        "arrow_size_mobile": 40,
-        "arrow_icon_size": 8,
-        "arrow_icon_size_mobile": 8,
-        "arrow_border_thickness": 0,
-        "arrow_radius": 100,
-        "arrow_hover_effect": "color",
-        "arrow_vertical_position": 50,
-        "arrow_vertical_position_mobile": 50,
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": false,
-        "stars_color": "#000000",
-        "review_text_color": "#000000",
-        "heading_color": "#000000",
-        "text_color": "#000000",
-        "button_color": "#ffffff",
-        "button_hover_color": "#ffffff",
-        "button_bg_color": "#000000",
-        "button_bg_hover_color": "#555555",
-        "button_border_color": "#b5b5b5",
-        "button_border_hover_color": "#555555",
-        "image_border_color": "#000000",
-        "slide_content_bg_color": "#ffffff",
-        "slide_content_border_color": "#000000",
-        "slide_text_color": "#000000",
-        "slide_author_color": "#000000",
-        "arrow_color": "#000000",
-        "arrow_hover_color": "#ffffff",
-        "arrow_bg_color": "#ffffff",
-        "arrow_bg_hover_color": "#000000",
-        "arrow_border_color": "#000000",
-        "arrow_border_hover_color": "#000000",
-        "background_color": "#ffffff",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 0,
-        "full_width": false,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
     }
   },
   "order": [
     "image_banner_r9TYqA",
     "capital_club_banner_AxFEjK",
-    "capital_club_slide_logo_cd3cUF",
     "featured_collection",
     "capital_club_rich_text1_d9NDeh",
-    "capital_club_presentation_marque_R633wi",
-    "capital_club_videotestimonials2_LnkN9a",
-    "capital_club_ingredients1_PFhqW4",
-    "capital_club_avant_apres1_jXmW4x",
-    "capital_club_testimonials1_PbHWNd"
+    "image_with_text_Aqpjwa",
+    "featured_collection_mUKqka",
+    "newsletter_K793Mm",
+    "capital_club_presentation_marque_R633wi"
   ]
 }
