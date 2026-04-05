@@ -39,7 +39,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-center",
+        "logo_position": "middle-center-menu-left",
         "header_width": 75,
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
