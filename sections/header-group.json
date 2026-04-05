@@ -46,7 +46,7 @@
         "sticky_header_type": "on-scroll-up",
         "transparent_header": true,
         "transparent_header_home_only": true,
-        "transparent_text_color": "#ffffff",
+        "transparent_text_color": "#000000",
         "show_line_separator": false,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
