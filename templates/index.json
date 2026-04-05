@@ -359,7 +359,7 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Trouvez votre thérapie naturelle",
+        "title": "Trouvez votre thérapie naturelle !",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
