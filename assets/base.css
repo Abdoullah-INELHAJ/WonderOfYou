@@ -3595,3 +3595,20 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* FORCE FOOTER FULL WIDTH - DO NOT REMOVE */
+.shopify-section-group-footer-group,
+.shopify-section-group-footer-group > .shopify-section,
+.shopify-section-group-footer-group > .last-section-marker, 
+.shopify-section-group-footer-group > .shopify-section > div[class^="section-"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.shopify-section-group-footer-group > .shopify-section > div[class^="section-"] > div[class*="-settings"] {
+  margin: 0 auto !important;
+}

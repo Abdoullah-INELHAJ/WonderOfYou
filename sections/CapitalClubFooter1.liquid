@@ -167,8 +167,15 @@
     border-bottom: solid {{ border_color }} {{ border_thickness }}px;
     margin-top: {{ margin_top | times: 0.75 | round: 0 }}px;
     margin-bottom: {{ margin_bottom | times: 0.75 | round: 0 }}px;
-    margin-left: {{ margin_horizontal_mobile }}rem;
-    margin-right: {{ margin_horizontal_mobile }}rem;
+    {% if full_width %}
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    {% else %}
+      margin-left: {{ margin_horizontal_mobile }}rem;
+      margin-right: {{ margin_horizontal_mobile }}rem;
+    {% endif %}
     border-radius: {{ section_radius | times: 0.6 | round: 0 }}px;
     overflow: hidden;
   }
@@ -453,8 +460,15 @@
     .section-{{ section.id }} {
       margin-top: {{ margin_top }}px;
       margin-bottom: {{ margin_bottom }}px;
-      margin-left: {{ margin_horizontal }}rem;
-      margin-right: {{ margin_horizontal }}rem;
+      {% if full_width %}
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      {% else %}
+        margin-left: {{ margin_horizontal }}rem;
+        margin-right: {{ margin_horizontal }}rem;
+      {% endif %}
       border-radius: {{ section_radius }}px;
     }
     
