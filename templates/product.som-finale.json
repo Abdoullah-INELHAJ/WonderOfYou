@@ -567,7 +567,6 @@
       "blocks": {
         "feature_NMHCQX": {
           "type": "feature",
-          "disabled": true,
           "settings": {
             "icon": "atc",
             "custom_icon": "shopify://shop_images/images_4.jpg",
@@ -592,7 +591,6 @@
         },
         "feature_GGVTtd": {
           "type": "feature",
-          "disabled": true,
           "settings": {
             "icon": "atc",
             "custom_icon": "shopify://shop_images/images_5.jpg",
