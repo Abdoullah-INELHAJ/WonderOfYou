@@ -571,8 +571,8 @@
             "icon": "atc",
             "custom_icon": "shopify://shop_images/matcha-powder-pile-green-tea-plate-realistic-sketch-shredded-leaves-drink-illustration-vintage-style-traditional-244820188.webp",
             "tab_title": "Matcha",
-            "title": "L'Allié Drainage",
-            "text": "<p>Puissant draineur naturel, il aide à éliminer les toxines et à réduire la rétention d'eau sans aucun effet excitant.</p>",
+            "title": "L’Allié Brûle-Graisse",
+            "text": "<p>Riche en actifs naturels, il aide à stimuler le métabolisme et à favoriser la combustion des graisses, pour une énergie plus stable et une silhouette plus légère.</p>",
             "sub_text": "",
             "image": "shopify://shop_images/Gemini_Generated_Image_mi3893mi3893mi38.png"
           }
@@ -593,12 +593,12 @@
           "type": "feature",
           "settings": {
             "icon": "atc",
-            "custom_icon": "shopify://shop_images/images_5.jpg",
+            "custom_icon": "shopify://shop_images/images_6.jpg",
             "tab_title": "Citronelle",
-            "title": "Le Stop Grignotage",
-            "text": "<p>Apporte une douceur gourmande naturelle qui évite les fringales, tout en facilitant le transit intestinal.</p>",
+            "title": "La Touche Légèreté",
+            "text": "<p>Favorise un confort digestif optimal et procure une sensation de légèreté durable au quotidien.</p>",
             "sub_text": "",
-            "image": "shopify://shop_images/Gemini_Generated_Image_dkx3didkx3didkx3.png"
+            "image": "shopify://shop_images/Gemini_Generated_Image_s9a8urs9a8urs9a8.png"
           }
         }
       },
@@ -667,7 +667,7 @@
         "sub_text_height": 130,
         "sub_text_mt": 10,
         "sub_text_mt_mobile": 8,
-        "button": "Get started",
+        "button": "",
         "button_url": "",
         "button_custom": false,
         "button_font": "josefin_sans_n4",
