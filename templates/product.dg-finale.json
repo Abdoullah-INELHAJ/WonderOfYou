@@ -569,36 +569,36 @@
           "type": "feature",
           "settings": {
             "icon": "atc",
-            "custom_icon": "shopify://shop_images/images_4.jpg",
-            "tab_title": "Rooibos Bio",
+            "custom_icon": "shopify://shop_images/images_7.jpg",
+            "tab_title": "Menthe",
             "title": "L'Allié Drainage",
             "text": "<p>Puissant draineur naturel, il aide à éliminer les toxines et à réduire la rétention d'eau sans aucun effet excitant.</p>",
             "sub_text": "",
-            "image": "shopify://shop_images/Gemini_Generated_Image_cbh546cbh546cbh5.png"
+            "image": "shopify://shop_images/Gemini_Generated_Image_637m9d637m9d637m.png"
           }
         },
         "feature_F9KWnp": {
           "type": "feature",
           "settings": {
             "icon": "atc",
-            "custom_icon": "shopify://shop_images/pngtree-lemon-fruit-realistic-transparent-png-image_9057010.png",
-            "tab_title": "Citron Tonique",
+            "custom_icon": "shopify://shop_images/biolys_be_reglisse.png",
+            "tab_title": "Reglisse",
             "title": "L'Accélérateur Détox",
             "text": "<p>Riche en antioxydants, il active le métabolisme et facilite la digestion pour un effet ventre plat immédiat.</p>",
             "sub_text": "",
-            "image": "shopify://shop_images/Gemini_Generated_Image_4ey8m84ey8m84ey8.png"
+            "image": "shopify://shop_images/Gemini_Generated_Image_trm2intrm2intrm2.png"
           }
         },
         "feature_GGVTtd": {
           "type": "feature",
           "settings": {
             "icon": "atc",
-            "custom_icon": "shopify://shop_images/images_5.jpg",
-            "tab_title": "Pêche Douce",
+            "custom_icon": "shopify://shop_images/images_8.jpg",
+            "tab_title": "Pomme",
             "title": "Le Stop Grignotage",
             "text": "<p>Apporte une douceur gourmande naturelle qui évite les fringales, tout en facilitant le transit intestinal.</p>",
             "sub_text": "",
-            "image": "shopify://shop_images/Gemini_Generated_Image_dkx3didkx3didkx3.png"
+            "image": "shopify://shop_images/Gemini_Generated_Image_r1xfhrr1xfhrr1xf.png"
           }
         }
       },
@@ -667,7 +667,7 @@
         "sub_text_height": 130,
         "sub_text_mt": 10,
         "sub_text_mt_mobile": 8,
-        "button": "Get started",
+        "button": "",
         "button_url": "",
         "button_custom": false,
         "button_font": "josefin_sans_n4",
