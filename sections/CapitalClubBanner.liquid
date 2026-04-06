@@ -132,7 +132,7 @@
   @media(min-width: 1024px) {
 
     .section-{{ section.id }} {
-      margin-top: {{ margin_top }}px;
+      margin-top: {{ margin_top | plus: 30 }}px;
       margin-bottom: {{ margin_bottom }}px;
       margin-left: {{ margin_horizontal }}rem;
       margin-right: {{ margin_horizontal }}rem;
@@ -149,6 +149,7 @@
 
     .hero-body-{{ section.id }} {
       gap: {{ body_gap }}px;
+      align-items: center;
     }
 
     .hero-content-{{ section.id }} {
@@ -156,9 +157,12 @@
       align-items: {{ content_horizontal_align }};
     }  
 
-    .hero-image-{{ section.id }} {
-      aspect-ratio: auto !important;
-    } 
+    .hero-image-{{ section.id }} img {
+      height: auto !important;
+      width: 100% !important;
+      max-width: 100%;
+      object-fit: contain !important;
+    }
 
     .hero-image-mobile-{{ section.id }} {
       display: none !important;
@@ -311,8 +315,9 @@
   <style>
     @media (min-width: 1024px) {
       .hero-body-{{ section.id }} {
-        grid-template-columns: {{ image_width }}% 1fr;
+        grid-template-columns: 55% 1fr;
         grid-template-areas: "image content";
+        padding-right: 2rem;
       }
     }
   </style>
@@ -321,8 +326,9 @@
     <style>
       @media (min-width: 1024px) {
         .hero-body-{{ section.id }} {
-          grid-template-columns: 1fr {{ image_width }}%;
+          grid-template-columns: 1fr 55%;
           grid-template-areas: "content image";
+          padding-right: 2rem;
         }
       }
     </style>
