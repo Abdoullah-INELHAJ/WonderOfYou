@@ -427,7 +427,7 @@
             "scrolling_mb": 12,
             "scrolling_type": "vertical",
             "reverse_direction": false,
-            "text": "24h d'efficacité",
+            "text": "Métabolisme boosté",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 60,
@@ -567,6 +567,7 @@
       "blocks": {
         "feature_NMHCQX": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon": "atc",
             "custom_icon": "shopify://shop_images/images_4.jpg",
@@ -591,6 +592,7 @@
         },
         "feature_GGVTtd": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon": "atc",
             "custom_icon": "shopify://shop_images/images_5.jpg",
