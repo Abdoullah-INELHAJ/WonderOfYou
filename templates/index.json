@@ -548,9 +548,9 @@
         "item_Nw3aKY": {
           "type": "item",
           "settings": {
-            "icon": "truck_2",
-            "title": "Enterprise",
-            "text": "The modern, composable stack for enterprise retail",
+            "icon": "payment",
+            "title": "Paiement sécurisé",
+            "text": "Vos informations sont protégées grâce à un système de paiement 100% sécurisé.",
             "url": "",
             "icon_color": "#2d7156",
             "icon_bg_color": "#aef2d7",
@@ -560,9 +560,9 @@
         "item_ckHqzq": {
           "type": "item",
           "settings": {
-            "icon": "price",
-            "title": "Plus",
-            "text": "A commerce solution for growing digital brands",
+            "icon": "truck",
+            "title": "Livraison rapide",
+            "text": "Expédition sous 24 à 48h, livraison en quelques jours directement chez vous.",
             "url": "",
             "icon_color": "#f83062",
             "icon_bg_color": "#ffe9f1",
@@ -572,9 +572,9 @@
         "item_RrAWBi": {
           "type": "item",
           "settings": {
-            "icon": "return",
-            "title": "Partners",
-            "text": "Offer your expertise to Shopify merchants all over the world",
+            "icon": "bi-ecology",
+            "title": "Marque française",
+            "text": "Produits conçus avec exigence et savoir-faire en France.",
             "url": "",
             "icon_color": "#2168f2",
             "icon_bg_color": "#e9f4ff",
@@ -585,8 +585,8 @@
           "type": "item",
           "settings": {
             "icon": "star",
-            "title": "Developers",
-            "text": "Build the future of commerce with Shopify's powerful API",
+            "title": "Ingrédients de qualité",
+            "text": "Des plantes sélectionnées avec soin pour leur efficacité et leur qualité.",
             "url": "",
             "icon_color": "#d73e3e",
             "icon_bg_color": "#ffe9e9",
@@ -596,9 +596,9 @@
         "item_YzHrMT": {
           "type": "item",
           "settings": {
-            "icon": "shop",
-            "title": "Retail stores",
-            "text": "The complete system for selling in person",
+            "icon": "chat",
+            "title": "Support client",
+            "text": "Une équipe à votre écoute pour répondre à toutes vos questions.",
             "url": "",
             "icon_color": "#6421f2",
             "icon_bg_color": "#efe9ff",
@@ -615,10 +615,10 @@
       ],
       "name": "CCLUB - Trust Badges #1",
       "settings": {
-        "heading": "<h2>Achetez en toute confiance</h2>",
+        "heading": "<p>Achetez en toute confiance</p>",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
-        "heading_size": 16,
+        "heading_size": 32,
         "heading_size_mobile": 16,
         "heading_height": 150,
         "heading_align": "left",
