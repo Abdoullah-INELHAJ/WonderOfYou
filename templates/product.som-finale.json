@@ -49,7 +49,7 @@
         "custom_liquid_rbGMxR": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n  p {\n    font-size: 14px;\n    line-height: 1.2;\n  }\n</style>\n\n<p>🍋 Plaisir & Légèreté : Une cure de 28 jours aux notes fraîches de citron, pensée pour accompagner votre routine sans contrainte, à tout moment de la journée.</p>\n<p>🔥 Activation du Métabolisme : Une synergie de plantes reconnues pour aider votre corps à utiliser les graisses comme source d’énergie et soutenir une silhouette plus affinée.</p>\n<p>🌿 Ventre Plus Léger : Une action ciblée pour réduire les sensations de lourdeur et les ballonnements, pour un confort digestif optimal au quotidien.</p>"
+            "custom_liquid": "<style>\n  p {\n    font-size: 14px;\n    line-height: 1.2;\n  }\n</style>\n\n<p>🌙 Endormissement Facilité : Une synergie de plantes reconnues pour aider à apaiser l’esprit et favoriser un endormissement naturel.</p>\n\n<p>🍋 Rituel Apaisant : Une cure de 28 jours aux notes douces et fraîches, idéale pour instaurer un moment de détente chaque soir.</p>\n\n<p>🌿 Sommeil Réparateur : Aide à améliorer la qualité du sommeil pour des nuits plus profondes et des réveils plus légers.</p>"
           }
         },
         "variant_picker": {
@@ -427,7 +427,7 @@
             "scrolling_mb": 12,
             "scrolling_type": "vertical",
             "reverse_direction": false,
-            "text": "Métabolisme boosté",
+            "text": "Nuits réparatrices",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 60,
