@@ -660,7 +660,326 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'review_carousel' -%}
+                {%- liquid
+                  assign duration = block.settings.duration | default: 5000
+                -%}
+                <style>
+                  .rc-wrap { font-family: inherit; margin: 12px 0 16px; width: 100%; position: relative; }
+                  .rc-track-outer { overflow: hidden; border-radius: 12px; border: 1px solid #e8e8e8; background: #f8f8f8; }
+                  .rc-track { display: flex; transition: transform 0.55s cubic-bezier(0.65, 0, 0.35, 1); will-change: transform; }
+                  .rc-slide { min-width: 100%; display: flex; align-items: flex-start; gap: 12px; padding: 14px 40px 14px 14px; box-sizing: border-box; text-decoration: none; color: inherit; }
+                  .rc-avatar { flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: #777; text-transform: uppercase; overflow: hidden; }
+                  .rc-avatar img { width: 100%; height: 100%; object-fit: cover; }
+                  .rc-content { flex: 1; min-width: 0; }
+                  .rc-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+                  .rc-name { font-size: 13px; font-weight: 700; color: #1a1a1a; }
+                  .rc-stars { display: flex; gap: 1px; }
+                  .rc-stars svg { width: 12px; height: 12px; }
+                  .rc-text { font-size: 12.5px; color: #555; line-height: 1.5; font-style: italic; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+                  .rc-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; border-radius: 50%; background: white; border: 1px solid #e0e0e0; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; box-shadow: 0 1px 4px rgba(0,0,0,0.08); transition: box-shadow 0.15s; pointer-events: auto; }
+                  .rc-arrow:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+                  .rc-arrow svg { width: 14px; height: 14px; color: #555; }
+                  .rc-arrow-right { right: 6px; }
+                  .rc-arrow-left { left: 6px; display: none; }
+                  .rc-dots { display: flex; justify-content: center; gap: 5px; margin-top: 8px; }
+                  .rc-dot { width: 6px; height: 6px; border-radius: 50%; background: #ddd; transition: background 0.3s, transform 0.3s; cursor: pointer; }
+                  .rc-dot.active { background: #888; transform: scale(1.25); }
+                  .rc-progress-bar { height: 2px; background: #eee; border-radius: 0 0 12px 12px; overflow: hidden; }
+                  .rc-progress-fill { height: 100%; background: #1a1a1a; width: 0%; transition: width linear; }
+                  @media (max-width: 480px) { .rc-slide { padding: 12px 38px 12px 12px; gap: 10px; } .rc-avatar { width: 38px; height: 38px; font-size: 13px; } .rc-name { font-size: 12.5px; } .rc-text { font-size: 12px; } }
+                </style>
+
+                <div class="rc-wrap" id="reviewCarousel-{{ block.id }}">
+                  <div class="rc-track-outer">
+                    <div class="rc-track" id="rcTrack-{{ block.id }}"></div>
+                    <div class="rc-progress-bar"><div class="rc-progress-fill" id="rcProgress-{{ block.id }}"></div></div>
+                  </div>
+                  <button class="rc-arrow rc-arrow-left" id="rcPrev-{{ block.id }}" aria-label="Avis précédent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                  </button>
+                  <button class="rc-arrow rc-arrow-right" id="rcNext-{{ block.id }}" aria-label="Avis suivant">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                  </button>
+                  <div class="rc-dots" id="rcDots-{{ block.id }}"></div>
+                </div>
+
+                <script>
+                (function() {
+                  var reviews = [
+                    { name: "Marie L.", stars: 5, text: "J'avais peur que ça ne fasse rien au bout d'une semaine... mais dès le 4ème jour mon ventre était visiblement moins gonflé. Je me sens plus légère après les repas, c'est bluffant !" },
+                    { name: "Sophie R.", stars: 5, text: "Le goût pêche-citron est vraiment agréable, pas du tout amer comme d'autres thés que j'avais essayés. Je le bois le soir et je dors mieux aussi. Ma cure de 28 jours touche à sa fin et je recommande." },
+                    { name: "Camille D.", stars: 5, text: "J'étais sceptique sur la perte de poids naturelle mais j'ai quand même perdu 2 kg en un mois sans changer mon alimentation. Le transit s'est vraiment amélioré dès la première semaine !" },
+                    { name: "Laura M.", stars: 4, text: "Très bonne odeur à l'ouverture, l'infusion est douce et pas du tout écoeurante. Je sens que mon corps est moins lourd, surtout le matin. Je vais renouveler la commande sans hésiter." }
+                  ];
+                  var DURATION = {{ duration }};
+                  var track = document.getElementById('rcTrack-{{ block.id }}');
+                  var dotsWrap = document.getElementById('rcDots-{{ block.id }}');
+                  var progress = document.getElementById('rcProgress-{{ block.id }}');
+                  var btnPrev = document.getElementById('rcPrev-{{ block.id }}');
+                  var btnNext = document.getElementById('rcNext-{{ block.id }}');
+                  var current = 0;
+                  var total = reviews.length;
+                  var timer = null;
+                  function starsSVG(n) {
+                    var html = '';
+                    for (var i = 1; i <= 5; i++) {
+                      var fill = i <= n ? '#f59e0b' : '#e5e7eb';
+                      html += '<svg viewBox="0 0 20 20" fill="' + fill + '" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>';
+                    }
+                    return html;
+                  }
+                  function initials(name) { return name.replace('.', '').trim().split(' ').map(function(w){ return w[0]; }).join('').slice(0,2); }
+                  reviews.forEach(function(r, idx) {
+                    var slide = document.createElement('a'); slide.className = 'rc-slide'; slide.href = '#avis';
+                    slide.innerHTML = '<div class="rc-avatar">' + initials(r.name) + '</div><div class="rc-content"><div class="rc-header"><span class="rc-name">' + r.name + '</span><div class="rc-stars">' + starsSVG(r.stars) + '</div></div><p class="rc-text">\u201c' + r.text + '\u201d</p></div>';
+                    track.appendChild(slide);
+                    var dot = document.createElement('div'); dot.className = 'rc-dot' + (idx === 0 ? ' active' : '');
+                    dot.addEventListener('click', function() { goTo(idx); }); dotsWrap.appendChild(dot);
+                  });
+                  if (total > 1) { btnPrev.style.display = 'flex'; }
+                  function updateDots() { dotsWrap.querySelectorAll('.rc-dot').forEach(function(d, i) { d.classList.toggle('active', i === current); }); }
+                  function startProgress() { progress.style.transition = 'none'; progress.style.width = '0%'; progress.offsetWidth; progress.style.transition = 'width ' + DURATION + 'ms linear'; progress.style.width = '100%'; }
+                  function goTo(idx) {
+                    current = (idx + total) % total; track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                    updateDots(); clearTimeout(timer); startProgress();
+                    timer = setTimeout(function() { goTo(current + 1); }, DURATION);
+                  }
+                  btnNext.addEventListener('click', function() { goTo(current + 1); });
+                  btnPrev.addEventListener('click', function() { goTo(current - 1); });
+                  var wrap = document.getElementById('reviewCarousel-{{ block.id }}');
+                  wrap.addEventListener('mouseenter', function() { clearTimeout(timer); progress.style.transition = 'none'; });
+                  wrap.addEventListener('mouseleave', function() { goTo(current); });
+                  var touchStartX = 0;
+                  track.addEventListener('touchstart', function(e) { touchStartX = e.touches[0].clientX; }, { passive: true });
+                  track.addEventListener('touchend', function(e) { var dx = e.changedTouches[0].clientX - touchStartX; if (Math.abs(dx) > 40) { dx < 0 ? goTo(current + 1) : goTo(current - 1); } }, { passive: true });
+                  goTo(0);
+                })();
+                </script>
+              {%- when 'bundle_and_save' -%}
+                <script>
+                  var BUNDLE_VARIANTS_{{ block.id | replace: "-", "_" }} = {};
+                  {% for variant in product.variants %}
+                    BUNDLE_VARIANTS_{{ block.id | replace: "-", "_" }}["{{ variant.title | downcase | strip }}"] = {
+                      id: {{ variant.id }},
+                      price: {{ variant.price | times: 1.0 | divided_by: 100.0 }}
+                    };
+                  {% endfor %}
+                </script>
+                <style>
+                  #bsw-{{ block.id }} { font-family: inherit; margin: 14px 0; width: 100%; }
+                  #bsw-{{ block.id }} .bsw-divider { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+                  #bsw-{{ block.id }} .bsw-divider-line { flex: 1; height: 1px; background: #e0e0e0; }
+                  #bsw-{{ block.id }} .bsw-divider-text { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #888; white-space: nowrap; }
+                  #bsw-{{ block.id }} .bsw-options { display: flex; flex-direction: column; gap: 8px; }
+                  #bsw-{{ block.id }} .bsw-option { position: relative; border: 1.5px solid #e0e0e0; border-radius: 12px; padding: 12px 14px; cursor: pointer; transition: border-color 0.18s, background 0.18s; background: #fff; user-select: none; }
+                  #bsw-{{ block.id }} .bsw-option:hover { border-color: #bbb; }
+                  #bsw-{{ block.id }} .bsw-option.selected { border-color: #1a1a1a; background: #fafafa; cursor: default; }
+                  #bsw-{{ block.id }} .bsw-option-row { display: flex; align-items: center; gap: 12px; }
+                  #bsw-{{ block.id }} .bsw-radio { flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #ccc; background: #fff; display: flex; align-items: center; justify-content: center; transition: border-color 0.18s, background 0.18s; }
+                  #bsw-{{ block.id }} .bsw-option.selected .bsw-radio { border-color: #1a1a1a; background: #1a1a1a; }
+                  #bsw-{{ block.id }} .bsw-radio-dot { width: 7px; height: 7px; border-radius: 50%; background: #fff; opacity: 0; transform: scale(0.3); transition: opacity 0.18s, transform 0.18s; }
+                  #bsw-{{ block.id }} .bsw-option.selected .bsw-radio-dot { opacity: 1; transform: scale(1); }
+                  #bsw-{{ block.id }} .bsw-info { flex: 1; min-width: 0; }
+                  #bsw-{{ block.id }} .bsw-qty { font-size: 14px; font-weight: 700; color: #1a1a1a; margin-bottom: 2px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+                  #bsw-{{ block.id }} .bsw-per-unit { font-size: 11.5px; color: #888; }
+                  #bsw-{{ block.id }} .bsw-pricing { text-align: right; flex-shrink: 0; }
+                  #bsw-{{ block.id }} .bsw-price { font-size: 15px; font-weight: 700; color: #1a1a1a; display: block; }
+                  #bsw-{{ block.id }} .bsw-original { font-size: 12px; color: #aaa; text-decoration: line-through; display: block; }
+                  #bsw-{{ block.id }} .bsw-badge { position: absolute; top: -10px; right: 12px; background: #1a1a1a; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; }
+                  #bsw-{{ block.id }} .bsw-tag { display: inline-block; background: #f0f0f0; color: #555; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 20px; letter-spacing: 0.03em; }
+                  #bsw-{{ block.id }} .bsw-recipe-zone { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #ebebeb; }
+                  #bsw-{{ block.id }} .bsw-option.selected .bsw-recipe-zone { display: block; }
+                  #bsw-{{ block.id }} .bsw-recipe-label { font-size: 11px; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 8px; }
+                  #bsw-{{ block.id }} .bsw-sachet-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+                  #bsw-{{ block.id }} .bsw-sachet-label { font-size: 12px; color: #555; min-width: 56px; flex-shrink: 0; }
+                  #bsw-{{ block.id }} .bsw-sachet-btns { display: flex; gap: 6px; flex: 1; }
+                  #bsw-{{ block.id }} .bsw-recipe-btn { flex: 1; padding: 7px 0; border-radius: 8px; border: 1.5px solid #e0e0e0; background: #fff; font-size: 12px; font-weight: 600; color: #555; cursor: pointer; transition: border-color 0.15s, background 0.15s, color 0.15s; text-align: center; }
+                  #bsw-{{ block.id }} .bsw-recipe-btn:hover { border-color: #bbb; }
+                  #bsw-{{ block.id }} .bsw-recipe-btn.active { border-color: #1a1a1a; background: #1a1a1a; color: #fff; }
+                  #bsw-{{ block.id }} .bsw-btn { display: block; width: 100%; margin-top: 10px; padding: 14px; background: #1a1a1a; color: #fff; font-size: 14px; font-weight: 700; text-align: center; border: none; border-radius: 12px; cursor: pointer; letter-spacing: 0.02em; transition: background 0.18s, transform 0.12s; box-sizing: border-box; }
+                  #bsw-{{ block.id }} .bsw-btn:hover { background: #333; }
+                  #bsw-{{ block.id }} .bsw-btn:active { transform: scale(0.98); }
+                  #bsw-{{ block.id }} .bsw-btn:disabled { background: #888; cursor: not-allowed; transform: none; }
+                  #bsw-{{ block.id }} .bsw-saving { text-align: center; font-size: 11.5px; color: #888; margin-top: 7px; min-height: 16px; }
+                  #bsw-{{ block.id }} .bsw-saving b { color: #1a1a1a; font-weight: 700; }
+                  #bsw-{{ block.id }} .bsw-error { text-align: center; font-size: 12px; color: #c0392b; margin-top: 6px; font-weight: 600; display: none; }
+                </style>
+
+                <div class="bsw" id="bsw-{{ block.id }}">
+                  <div class="bsw-divider">
+                    <div class="bsw-divider-line"></div>
+                    <span class="bsw-divider-text">Bundle &amp; Save</span>
+                    <div class="bsw-divider-line"></div>
+                  </div>
+                  <div class="bsw-options">
+                    <div class="bsw-option selected" data-qty="1" data-discount="0">
+                      <div class="bsw-option-row">
+                        <div class="bsw-radio"><div class="bsw-radio-dot"></div></div>
+                        <div class="bsw-info">
+                          <div class="bsw-qty">Cure 1 mois</div>
+                          <div class="bsw-per-unit bsw-per-unit-val">—</div>
+                        </div>
+                        <div class="bsw-pricing"><span class="bsw-price bsw-price-val">—</span></div>
+                      </div>
+                      <div class="bsw-recipe-zone">
+                        <div class="bsw-recipe-label">Votre recette</div>
+                        <div class="bsw-sachet-row">
+                          <span class="bsw-sachet-label">Sachet 1</span>
+                          <div class="bsw-sachet-btns">
+                            <button class="bsw-recipe-btn active" data-recipe="fruitée">🍑 Fruitée</button>
+                            <button class="bsw-recipe-btn" data-recipe="nature">🌿 Nature</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bsw-option" data-qty="2" data-discount="8">
+                      <div class="bsw-option-row">
+                        <div class="bsw-radio"><div class="bsw-radio-dot"></div></div>
+                        <div class="bsw-info">
+                          <div class="bsw-qty">Cure 2 mois <span class="bsw-tag">Livraison offerte</span></div>
+                          <div class="bsw-per-unit bsw-per-unit-val">—</div>
+                        </div>
+                        <div class="bsw-pricing">
+                          <span class="bsw-price bsw-price-val">—</span>
+                          <span class="bsw-original bsw-original-val"></span>
+                        </div>
+                      </div>
+                      <div class="bsw-recipe-zone">
+                        <div class="bsw-recipe-label">Vos recettes</div>
+                        <div class="bsw-sachet-row"><span class="bsw-sachet-label">Sachet 1</span><div class="bsw-sachet-btns"><button class="bsw-recipe-btn active" data-recipe="fruitée">🍑 Fruitée</button><button class="bsw-recipe-btn" data-recipe="nature">🌿 Nature</button></div></div>
+                        <div class="bsw-sachet-row"><span class="bsw-sachet-label">Sachet 2</span><div class="bsw-sachet-btns"><button class="bsw-recipe-btn active" data-recipe="fruitée">🍑 Fruitée</button><button class="bsw-recipe-btn" data-recipe="nature">🌿 Nature</button></div></div>
+                      </div>
+                    </div>
+                    <div class="bsw-option" data-qty="3" data-discount="16">
+                      <div class="bsw-badge">Le plus populaire</div>
+                      <div class="bsw-option-row">
+                        <div class="bsw-radio"><div class="bsw-radio-dot"></div></div>
+                        <div class="bsw-info">
+                          <div class="bsw-qty">Cure 3 mois <span class="bsw-tag">Livraison offerte</span></div>
+                          <div class="bsw-per-unit bsw-per-unit-val">—</div>
+                        </div>
+                        <div class="bsw-pricing">
+                          <span class="bsw-price bsw-price-val">—</span>
+                          <span class="bsw-original bsw-original-val"></span>
+                        </div>
+                      </div>
+                      <div class="bsw-recipe-zone">
+                        <div class="bsw-recipe-label">Vos recettes</div>
+                        <div class="bsw-sachet-row"><span class="bsw-sachet-label">Sachet 1</span><div class="bsw-sachet-btns"><button class="bsw-recipe-btn active" data-recipe="fruitée">🍑 Fruitée</button><button class="bsw-recipe-btn" data-recipe="nature">🌿 Nature</button></div></div>
+                        <div class="bsw-sachet-row"><span class="bsw-sachet-label">Sachet 2</span><div class="bsw-sachet-btns"><button class="bsw-recipe-btn active" data-recipe="fruitée">🍑 Fruitée</button><button class="bsw-recipe-btn" data-recipe="nature">🌿 Nature</button></div></div>
+                        <div class="bsw-sachet-row"><span class="bsw-sachet-label">Sachet 3</span><div class="bsw-sachet-btns"><button class="bsw-recipe-btn active" data-recipe="fruitée">🍑 Fruitée</button><button class="bsw-recipe-btn" data-recipe="nature">🌿 Nature</button></div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="bsw-btn" id="bswBtn-{{ block.id }}">Ajouter au panier</button>
+                  <p class="bsw-saving" id="bswSaving-{{ block.id }}">&nbsp;</p>
+                  <p class="bsw-error" id="bswError-{{ block.id }}">⚠️ Une erreur est survenue, réessaie.</p>
+                </div>
+                <script>
+                (function() {
+                  var BUNDLE_VARIANTS = BUNDLE_VARIANTS_{{ block.id | replace: "-", "_" }};
+                  var wrap = document.getElementById('bsw-{{ block.id }}');
+                  var btn = document.getElementById('bswBtn-{{ block.id }}');
+                  var saving = document.getElementById('bswSaving-{{ block.id }}');
+                  var errEl = document.getElementById('bswError-{{ block.id }}');
+                  function eur(n) { return '€' + parseFloat(n).toFixed(2).replace('.', ','); }
+                  function getVariant(recipe) {
+                    var key = recipe.toLowerCase().trim();
+                    for (var k in BUNDLE_VARIANTS) { if (k.indexOf(key) !== -1) return BUNDLE_VARIANTS[k]; }
+                    return null;
+                  }
+                  function calcTotal(opt) {
+                    var discount = parseInt(opt.dataset.discount) || 0;
+                    var rows = opt.querySelectorAll('.bsw-sachet-row');
+                    var full = 0;
+                    rows.forEach(function(row) {
+                      var active = row.querySelector('.bsw-recipe-btn.active');
+                      var v = getVariant(active ? active.dataset.recipe : 'fruitée');
+                      full += v ? v.price : 0;
+                    });
+                    var discounted = discount > 0 ? Math.round(full * (1 - discount / 100) * 100) / 100 : full;
+                    return { full: full, discounted: discounted };
+                  }
+                  function refreshOption(opt) {
+                    var p = calcTotal(opt);
+                    var qty = parseInt(opt.dataset.qty);
+                    opt.querySelector('.bsw-price-val').textContent = eur(p.discounted);
+                    opt.querySelector('.bsw-per-unit-val').textContent = eur(p.discounted / qty) + ' / cure';
+                    var origEl = opt.querySelector('.bsw-original-val');
+                    if (origEl) origEl.textContent = p.full !== p.discounted ? eur(p.full) : '';
+                  }
+                  function refreshBtn() {
+                    var sel = wrap.querySelector('.bsw-option.selected');
+                    if (!sel) return;
+                    var p = calcTotal(sel);
+                    var saved = Math.round((p.full - p.discounted) * 100) / 100;
+                    btn.textContent = 'Ajouter au panier — ' + eur(p.discounted);
+                    saving.innerHTML = saved > 0 ? 'Tu économises <b>' + eur(saved) + '</b> sur cette commande' : '&nbsp;';
+                  }
+                  function refreshAll() { wrap.querySelectorAll('.bsw-option').forEach(function(o) { refreshOption(o); }); refreshBtn(); }
+                  wrap.querySelectorAll('.bsw-option').forEach(function(opt) {
+                    opt.addEventListener('click', function(e) {
+                      if (e.target.classList.contains('bsw-recipe-btn')) return;
+                      wrap.querySelectorAll('.bsw-option').forEach(function(o) { o.classList.remove('selected'); });
+                      opt.classList.add('selected'); refreshBtn();
+                    });
+                  });
+                  wrap.querySelectorAll('.bsw-recipe-btn').forEach(function(rb) {
+                    rb.addEventListener('click', function(e) {
+                      e.stopPropagation();
+                      var row = rb.closest('.bsw-sachet-row');
+                      row.querySelectorAll('.bsw-recipe-btn').forEach(function(b) { b.classList.remove('active'); });
+                      rb.classList.add('active');
+                      var parentOpt = rb.closest('.bsw-option');
+                      if (!parentOpt.classList.contains('selected')) {
+                        wrap.querySelectorAll('.bsw-option').forEach(function(o) { o.classList.remove('selected'); });
+                        parentOpt.classList.add('selected');
+                      }
+                      refreshOption(parentOpt); refreshBtn();
+                    });
+                  });
+                  btn.addEventListener('click', function() {
+                    var sel = wrap.querySelector('.bsw-option.selected');
+                    if (!sel) return;
+                    errEl.style.display = 'none';
+                    var counts = {};
+                    sel.querySelectorAll('.bsw-sachet-row').forEach(function(row) {
+                      var active = row.querySelector('.bsw-recipe-btn.active');
+                      var v = getVariant(active ? active.dataset.recipe : 'fruitée');
+                      if (!v) return;
+                      counts[v.id] = (counts[v.id] || 0) + 1;
+                    });
+                    var items = Object.keys(counts).map(function(id) { return { id: parseInt(id), quantity: counts[id] }; });
+                    btn.disabled = true; btn.textContent = 'Ajout en cours…';
+                    var cartDrawer = document.querySelector('cart-drawer');
+                    var sectionsParam = cartDrawer ? cartDrawer.getSectionsToRender().map(function(s) { return s.id; }) : ['cart-drawer', 'cart-icon-bubble'];
+                    fetch('/cart/add.js', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
+                      body: JSON.stringify({ items: items, sections: sectionsParam, sections_url: window.location.pathname })
+                    })
+                    .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+                    .then(function(response) {
+                      btn.textContent = '✓ Ajouté !'; btn.style.background = '#2d7a3a';
+                      if (cartDrawer) { cartDrawer.renderContents(response); }
+                      if (typeof publish === 'function' && typeof PUB_SUB_EVENTS !== 'undefined') {
+                        publish(PUB_SUB_EVENTS.cartUpdate, { source: 'product-form', cartData: response });
+                      }
+                      setTimeout(function() { btn.disabled = false; btn.style.background = ''; refreshBtn(); }, 2200);
+                    })
+                    .catch(function(err) {
+                      console.error('Bundle error:', err);
+                      btn.disabled = false; btn.style.background = '#c0392b'; btn.textContent = '⚠️ Erreur — réessaie';
+                      errEl.style.display = 'block';
+                      setTimeout(function() { btn.style.background = ''; refreshBtn(); errEl.style.display = 'none'; }, 3000);
+                    });
+                  });
+                  refreshAll();
+                })();
+                </script>
             {%- endcase -%}
+          {%- endfor -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
             {{ 'products.product.view_full_details' | t }}
@@ -732,6 +1051,27 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "review_carousel",
+      "name": "Carrousel d'avis (Bundle)",
+      "settings": [
+        {
+          "type": "range",
+          "id": "duration",
+          "min": 2000,
+          "max": 10000,
+          "step": 500,
+          "unit": "ms",
+          "label": "Durée d'affichage",
+          "default": 5000
+        }
+      ]
+    },
+    {
+      "type": "bundle_and_save",
+      "name": "Bundle & Save",
+      "settings": []
     },
     {
       "type": "text",
