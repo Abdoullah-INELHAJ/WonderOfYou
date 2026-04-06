@@ -569,12 +569,12 @@
           "type": "feature",
           "settings": {
             "icon": "atc",
-            "custom_icon": "shopify://shop_images/images_4.jpg",
-            "tab_title": "Rooibos Bio",
+            "custom_icon": "shopify://shop_images/matcha-powder-pile-green-tea-plate-realistic-sketch-shredded-leaves-drink-illustration-vintage-style-traditional-244820188.webp",
+            "tab_title": "Matcha",
             "title": "L'Allié Drainage",
             "text": "<p>Puissant draineur naturel, il aide à éliminer les toxines et à réduire la rétention d'eau sans aucun effet excitant.</p>",
             "sub_text": "",
-            "image": "shopify://shop_images/Gemini_Generated_Image_cbh546cbh546cbh5.png"
+            "image": "shopify://shop_images/Gemini_Generated_Image_mi3893mi3893mi38.png"
           }
         },
         "feature_F9KWnp": {
@@ -582,7 +582,7 @@
           "settings": {
             "icon": "atc",
             "custom_icon": "shopify://shop_images/pngtree-lemon-fruit-realistic-transparent-png-image_9057010.png",
-            "tab_title": "Citron Tonique",
+            "tab_title": "Citron",
             "title": "L'Accélérateur Détox",
             "text": "<p>Riche en antioxydants, il active le métabolisme et facilite la digestion pour un effet ventre plat immédiat.</p>",
             "sub_text": "",
@@ -594,7 +594,7 @@
           "settings": {
             "icon": "atc",
             "custom_icon": "shopify://shop_images/images_5.jpg",
-            "tab_title": "Pêche Douce",
+            "tab_title": "Citronelle",
             "title": "Le Stop Grignotage",
             "text": "<p>Apporte une douceur gourmande naturelle qui évite les fringales, tout en facilitant le transit intestinal.</p>",
             "sub_text": "",
