@@ -931,36 +931,36 @@
         "item_nELinm": {
           "type": "item",
           "settings": {
-            "question": "Est-ce que ce thé fait vraiment maigrir ?",
-            "answer": "<p>Ce thé accompagne la perte de poids en aidant à drainer, réduire les ballonnements et limiter les fringales. Il ne remplace pas une alimentation équilibrée, mais il agit comme un véritable boost naturel pour atteindre vos objectifs plus facilement.</p>"
+            "question": "Est-ce que cette infusion aide vraiment à la digestion ?",
+            "answer": "<p>Oui, elle est composée de plantes reconnues pour apaiser le système digestif et faciliter la digestion naturellement.</p>"
           }
         },
         "item_Ehq3gR": {
           "type": "item",
           "settings": {
-            "question": "En combien de temps voit-on les résultats ?",
-            "answer": "<p>Les premiers effets (ventre plus léger, moins de ballonnements) peuvent se ressentir en quelques jours. Pour des résultats visibles, une cure complète de 28 jours est recommandée.</p>"
+            "question": "En combien de temps ressent-on les effets ?",
+            "answer": "<p>Les effets peuvent se ressentir dès les premières utilisations, avec une sensation de ventre plus léger après les repas.</p>"
           }
         },
         "item_tExcyh": {
           "type": "item",
           "settings": {
-            "question": "Est-ce qu’il y a de la caféine ou des effets secondaires ?",
-            "answer": "<p>Non, notre formule est <strong>sans théine ni caféine</strong>. Elle est douce pour l’organisme et peut être consommée à tout moment de la journée, même le soir.</p>"
+            "question": "Quand faut-il la boire ?",
+            "answer": "<p>Idéalement après les repas pour favoriser une digestion plus confortable.</p>"
           }
         },
         "item_89UteP": {
           "type": "item",
           "settings": {
-            "question": "Comment consommer ce thé pour de meilleurs résultats ?",
-            "answer": "<p>Il est conseillé de boire <strong>1 à 2 tasses par jour</strong>, idéalement le matin et/ou après les repas. Une consommation régulière permet d’optimiser les effets de la cure.</p>"
+            "question": "Peut-on la consommer tous les jours ?",
+            "answer": "<p>Oui, elle est adaptée à une consommation quotidienne pour maintenir un bon équilibre digestif.</p>"
           }
         },
         "item_gLDYyF": {
           "type": "item",
           "settings": {
-            "question": "Est-ce que le goût est agréable ?",
-            "answer": "<p>Oui, contrairement à la plupart des thés minceur, Ma Thérapie vous laisse le choix : optez pour une saveur fruitée gourmande ou une version 100% naturelle, selon vos préférences.</p>"
+            "question": "Est-ce que cela aide contre les ballonnements ?",
+            "answer": "<p>Oui, elle aide à réduire les ballonnements et les sensations de lourdeur pour un meilleur confort au quotidien.</p>"
           }
         }
       },
