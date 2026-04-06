@@ -391,7 +391,7 @@
         "heading_fizT3j": {
           "type": "heading",
           "settings": {
-            "heading": "<h2>à propos de \"nom marque\"</h2>",
+            "heading": "<p>Pourquoi choisir Ma Thérapie Minceur?<br/><br/></p>",
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_size": 36,
@@ -405,7 +405,7 @@
         "text_ykEcDN": {
           "type": "text",
           "settings": {
-            "text": "<p>Description/introduction de votre marque, de la valeur apportée par celle-ci et de ses valeurs</p>",
+            "text": "<p>Ne choisissez plus entre plaisir et efficacité. Là où les thés classiques utilisent souvent des arômes artificiels ou des stimulants agressifs, <strong>Ma Thérapie</strong> mise sur la puissance des plantes pures et certifiées bio.</p><p>Nos cures de 28 jours sont conçues pour agir en profondeur tout en respectant votre équilibre :</p><ul><li><strong>Le goût avant tout :</strong> Profitez de notes naturelles et fruitées, sans aucune amertume.</li><li><strong>Zéro compromis sur le sommeil :</strong> Sans théine ni caféine, nos mélanges vous accompagnent du matin au soir.</li><li><strong>Efficacité durable :</strong> Une action drainante douce et progressive pour des résultats visibles sans brusquer votre organisme.</li></ul><p><strong>Offrez-vous bien plus qu’une boisson : offrez-vous un véritable rituel de soin.</strong></p>",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 16,
