@@ -50,15 +50,15 @@
       "settings": {
         "image": "shopify://shop_images/1775383652387-019d5d19-faed-7c02-a89a-368eb6fd83e3.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "capital_club_banner_AxFEjK": {
