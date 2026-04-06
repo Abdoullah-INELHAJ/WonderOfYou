@@ -325,7 +325,7 @@
           "type": "button",
           "settings": {
             "button_label": "JE CRAQUE",
-            "button_link": "",
+            "button_link": "shopify://products/ma-box-perte-de-poids",
             "button_style_secondary": false
           }
         }
@@ -541,6 +541,149 @@
         "section_radius": 0,
         "lazy": true
       }
+    },
+    "capital_club_trust_badges_fBk9Xr": {
+      "type": "CapitalClubTrustBadges",
+      "blocks": {
+        "item_Nw3aKY": {
+          "type": "item",
+          "settings": {
+            "icon": "payment",
+            "title": "Paiement sécurisé",
+            "text": "Vos informations sont protégées grâce à un système de paiement 100% sécurisé.",
+            "url": "",
+            "icon_color": "#2d7156",
+            "icon_bg_color": "#aef2d7",
+            "icon_shadow_color": "#e5fdf3"
+          }
+        },
+        "item_ckHqzq": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "title": "Livraison rapide",
+            "text": "Expédition sous 24 à 48h, livraison en quelques jours directement chez vous.",
+            "url": "",
+            "icon_color": "#f83062",
+            "icon_bg_color": "#ffe9f1",
+            "icon_shadow_color": "#fef4f6"
+          }
+        },
+        "item_RrAWBi": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-ecology",
+            "title": "Marque française",
+            "text": "Produits conçus avec exigence et savoir-faire en France.",
+            "url": "",
+            "icon_color": "#2168f2",
+            "icon_bg_color": "#e9f4ff",
+            "icon_shadow_color": "#f4fafe"
+          }
+        },
+        "item_4RaAfM": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Ingrédients de qualité",
+            "text": "Des plantes sélectionnées avec soin pour leur efficacité et leur qualité.",
+            "url": "",
+            "icon_color": "#d73e3e",
+            "icon_bg_color": "#ffe9e9",
+            "icon_shadow_color": "#fef6f4"
+          }
+        },
+        "item_YzHrMT": {
+          "type": "item",
+          "settings": {
+            "icon": "chat",
+            "title": "Support client",
+            "text": "Une équipe à votre écoute pour répondre à toutes vos questions.",
+            "url": "",
+            "icon_color": "#6421f2",
+            "icon_bg_color": "#efe9ff",
+            "icon_shadow_color": "#f7f4fe"
+          }
+        }
+      },
+      "block_order": [
+        "item_Nw3aKY",
+        "item_ckHqzq",
+        "item_RrAWBi",
+        "item_4RaAfM",
+        "item_YzHrMT"
+      ],
+      "name": "CCLUB - Trust Badges #1",
+      "settings": {
+        "heading": "<p>Achetez en toute confiance</p>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 32,
+        "heading_size_mobile": 16,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "left",
+        "items_style": "grid",
+        "items_style_mobile": "slider",
+        "items_row": 5,
+        "items_row_mobile": 1.3,
+        "items_gap": 20,
+        "items_gap_mobile": 20,
+        "items_mt": 28,
+        "items_mt_mobile": 22,
+        "item_padding_vertical": 24,
+        "item_padding_vertical_mobile": 24,
+        "item_padding_horizontal": 24,
+        "item_padding_horizontal_mobile": 24,
+        "item_radius": 8,
+        "item_border_thickness": 1,
+        "item_shadow": true,
+        "item_hover": true,
+        "content_align": "start",
+        "content_align_mobile": "start",
+        "icon_size": 56,
+        "icon_size_mobile": 56,
+        "hide_icon": false,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 18,
+        "title_size_mobile": 18,
+        "title_height": 130,
+        "title_mt": 28,
+        "title_mt_mobile": 28,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_mt": 8,
+        "text_mt_mobile": 8,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "dots_mt": 32,
+        "dots_show_desktop": true,
+        "dots_show_mobile": true,
+        "item_bg": "#ffffff",
+        "item_border_color": "#f1f2f2",
+        "item_shadow_color": "#42474c",
+        "title_color": "#000000",
+        "text_color": "#52525b",
+        "dots_color": "#52525b",
+        "heading_color": "#0a455f",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -551,6 +694,7 @@
     "image_with_text_Aqpjwa",
     "featured_collection_mUKqka",
     "newsletter_K793Mm",
-    "capital_club_presentation_marque_R633wi"
+    "capital_club_presentation_marque_R633wi",
+    "capital_club_trust_badges_fBk9Xr"
   ]
 }
