@@ -19,7 +19,7 @@
         "text_3FPjR9": {
           "type": "text",
           "settings": {
-            "text": "Perdez du ventre en 28 jours, sans effort et avec plaisir !",
+            "text": "Aidez votre corps à activer la combustion des graisses en 28 jours, naturellement et sans frustration !",
             "text_style": "body"
           }
         },
@@ -931,36 +931,36 @@
         "item_nELinm": {
           "type": "item",
           "settings": {
-            "question": "Est-ce que ce thé fait vraiment maigrir ?",
-            "answer": "<p>Ce thé accompagne la perte de poids en aidant à drainer, réduire les ballonnements et limiter les fringales. Il ne remplace pas une alimentation équilibrée, mais il agit comme un véritable boost naturel pour atteindre vos objectifs plus facilement.</p>"
+            "question": "Est-ce que ce thé brûle vraiment les graisses ?",
+            "answer": "<p>Ce mélange est conçu pour <strong>stimuler naturellement le métabolisme</strong>, favorisant ainsi la combustion des graisses. Il agit en complément d’une alimentation équilibrée pour accélérer les résultats.</p>"
           }
         },
         "item_Ehq3gR": {
           "type": "item",
           "settings": {
-            "question": "En combien de temps voit-on les résultats ?",
-            "answer": "<p>Les premiers effets (ventre plus léger, moins de ballonnements) peuvent se ressentir en quelques jours. Pour des résultats visibles, une cure complète de 28 jours est recommandée.</p>"
+            "question": "Quelle est la différence avec le thé minceur ?",
+            "answer": "<p>Le thé minceur agit surtout sur le drainage et le confort digestif, tandis que la version <strong>brûle graisse cible directement le métabolisme</strong> pour aider le corps à utiliser les graisses comme source d’énergie.</p>"
           }
         },
         "item_tExcyh": {
           "type": "item",
           "settings": {
-            "question": "Est-ce qu’il y a de la caféine ou des effets secondaires ?",
-            "answer": "<p>Non, notre formule est <strong>sans théine ni caféine</strong>. Elle est douce pour l’organisme et peut être consommée à tout moment de la journée, même le soir.</p>"
+            "question": "En combien de temps voit-on les effets ?",
+            "answer": "<p>Vous pouvez ressentir un regain d’énergie rapidement. Les effets visibles sur la silhouette apparaissent généralement après <strong>2 à 4 semaines</strong> de consommation régulière.</p>"
           }
         },
         "item_89UteP": {
           "type": "item",
           "settings": {
-            "question": "Comment consommer ce thé pour de meilleurs résultats ?",
-            "answer": "<p>Il est conseillé de boire <strong>1 à 2 tasses par jour</strong>, idéalement le matin et/ou après les repas. Une consommation régulière permet d’optimiser les effets de la cure.</p>"
+            "question": "Est-ce que ça donne de l’énergie ?",
+            "answer": "<p>Oui, certaines plantes de la formule aident à <strong>activer naturellement l’organisme</strong>, ce qui peut soutenir votre niveau d’énergie au quotidien.</p>"
           }
         },
         "item_gLDYyF": {
           "type": "item",
           "settings": {
-            "question": "Est-ce que le goût est agréable ?",
-            "answer": "<p>Oui, contrairement à la plupart des thés minceur, Ma Thérapie vous laisse le choix : optez pour une saveur fruitée gourmande ou une version 100% naturelle, selon vos préférences.</p>"
+            "question": "Comment optimiser les résultats ?",
+            "answer": "<p>Pour maximiser les effets, il est conseillé de consommer <strong>1 à 2 tasses par jour</strong>, idéalement avant ou après les repas, et de maintenir une routine active.</p>"
           }
         }
       },
