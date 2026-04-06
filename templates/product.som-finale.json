@@ -610,7 +610,7 @@
       "settings": {
         "body_layout": "text_image",
         "body_gap": 92,
-        "content_align": "left",
+        "content_align": "center",
         "content_align_mobile": "center",
         "heading": "<h2><strong>Le secret de votre cure 28 jours</strong><br/><br/></h2>",
         "heading_custom": false,
