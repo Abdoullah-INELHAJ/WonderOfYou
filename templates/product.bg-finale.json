@@ -391,7 +391,7 @@
         "heading_fizT3j": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Pourquoi choisir Ma Thérapie Minceur?<br/><br/></p>",
+            "heading": "<p>Pourquoi choisir Ma Thérapie Brûle Graisse ?</p>",
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_size": 36,
@@ -458,7 +458,7 @@
         "content_padding_vertical_mobile": 16,
         "content_padding_horizontal": 32,
         "content_padding_horizontal_mobile": 16,
-        "image": "shopify://shop_images/Comparaison_b0987278-55fa-4f80-bd8f-24f9ec67d6f6.png",
+        "image": "shopify://shop_images/Comparaison_bc99ce3d-5ff2-4055-8afa-82061d2fd69f.png",
         "image_position": "right",
         "image_position_mobile": "top",
         "image_ratio": "square",
