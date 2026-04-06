@@ -945,22 +945,22 @@
         "item_tExcyh": {
           "type": "item",
           "settings": {
-            "question": "Est-ce qu’il y a de la caféine ou des effets secondaires ?",
-            "answer": "<p>Non, notre formule est <strong>sans théine ni caféine</strong>. Elle est douce pour l’organisme et peut être consommée à tout moment de la journée, même le soir.</p>"
+            "question": "Peut-on la consommer tous les soirs ?",
+            "answer": "<p>Oui, elle est sans théine ni caféine, parfaitement adaptée à une consommation quotidienne sans perturber votre rythme naturel.</p>"
           }
         },
         "item_89UteP": {
           "type": "item",
           "settings": {
-            "question": "Comment consommer ce thé pour de meilleurs résultats ?",
-            "answer": "<p>Il est conseillé de boire <strong>1 à 2 tasses par jour</strong>, idéalement le matin et/ou après les repas. Une consommation régulière permet d’optimiser les effets de la cure.</p>"
+            "question": "Est-ce que cela crée une dépendance ?",
+            "answer": "<p>Non, il s’agit d’une solution naturelle, sans accoutumance, qui respecte le fonctionnement de votre organisme.</p>"
           }
         },
         "item_gLDYyF": {
           "type": "item",
           "settings": {
-            "question": "Est-ce que le goût est agréable ?",
-            "answer": "<p>Oui, contrairement à la plupart des thés minceur, Ma Thérapie vous laisse le choix : optez pour une saveur fruitée gourmande ou une version 100% naturelle, selon vos préférences.</p>"
+            "question": "Quand faut-il la boire pour de meilleurs résultats ?",
+            "answer": "<p>Idéalement 30 à 60 minutes avant le coucher, pour préparer le corps et l’esprit à un sommeil apaisé.</p>"
           }
         }
       },
