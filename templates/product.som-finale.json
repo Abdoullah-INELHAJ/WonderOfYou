@@ -569,12 +569,12 @@
           "type": "feature",
           "settings": {
             "icon": "atc",
-            "custom_icon": "shopify://shop_images/images_4.jpg",
-            "tab_title": "Rooibos Bio",
-            "title": "L'Allié Drainage",
-            "text": "<p>Puissant draineur naturel, il aide à éliminer les toxines et à réduire la rétention d'eau sans aucun effet excitant.</p>",
+            "custom_icon": "shopify://shop_images/images_7.jpg",
+            "tab_title": "Mélisse Apaisante",
+            "title": "L’Allié Sommeil",
+            "text": "<p>Connue pour ses propriétés apaisantes, la mélisse favorise un endormissement plus rapide et un sommeil plus profond et réparateur.</p>",
             "sub_text": "",
-            "image": "shopify://shop_images/Gemini_Generated_Image_cbh546cbh546cbh5.png"
+            "image": "shopify://shop_images/Gemini_Generated_Image_637m9d637m9d637m.png"
           }
         },
         "feature_F9KWnp": {
@@ -610,7 +610,7 @@
       "settings": {
         "body_layout": "text_image",
         "body_gap": 92,
-        "content_align": "center",
+        "content_align": "left",
         "content_align_mobile": "center",
         "heading": "<h2><strong>Le secret de votre cure 28 jours</strong><br/><br/></h2>",
         "heading_custom": false,
@@ -667,7 +667,7 @@
         "sub_text_height": 130,
         "sub_text_mt": 10,
         "sub_text_mt_mobile": 8,
-        "button": "Get started",
+        "button": "",
         "button_url": "",
         "button_custom": false,
         "button_font": "josefin_sans_n4",
@@ -899,7 +899,7 @@
         "heading_WUfNzz": {
           "type": "heading",
           "settings": {
-            "heading": "<p><strong>Votre guide pour une cure minceur réussie</strong></p>",
+            "heading": "<p><strong>Votre guide pour une cure sommeil réussie</strong></p>",
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_size": 48,
@@ -931,8 +931,8 @@
         "item_nELinm": {
           "type": "item",
           "settings": {
-            "question": "Est-ce que ce thé fait vraiment maigrir ?",
-            "answer": "<p>Ce thé accompagne la perte de poids en aidant à drainer, réduire les ballonnements et limiter les fringales. Il ne remplace pas une alimentation équilibrée, mais il agit comme un véritable boost naturel pour atteindre vos objectifs plus facilement.</p>"
+            "question": "Est-ce que cette infusion aide vraiment à mieux dormir ?",
+            "answer": "<p>Oui, la formule est composée de plantes reconnues pour favoriser l’endormissement et améliorer la qualité du sommeil naturellement.</p>"
           }
         },
         "item_Ehq3gR": {
@@ -975,7 +975,7 @@
       ],
       "settings": {
         "body_gap": 30,
-        "body_gap_mobile": 20,
+        "body_gap_mobile": 100,
         "body_radius": 40,
         "faq_position": "right",
         "faq_position_mobile": "top",
